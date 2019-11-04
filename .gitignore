@@ -1,0 +1,6 @@
+# Ignore
+.DS_Store
+
+## Build generated
+build/
+DerivedData/
