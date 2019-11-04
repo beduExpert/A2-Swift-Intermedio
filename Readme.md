@@ -1,18 +1,27 @@
- 
-## Módulo: Nombre del modulo
+`Desarrollo Mobile` > `Swift Intermedio`
+
+## Módulo: Swift Intermedio
+
+Bienvenidos al curso de Programación en Swift Intermedio.
+Este módulo es la continuación del curso de Swift Fundamentals. Durante las sesiones de este curso profundizaremos mas sobre Swift y iOS.
+
+### Antes de comenzar...
+
+Verifica tener **Xcode 11** instalado.
 
 ### OBJETIVO 
- - Agrega lo que van a aprender en el modulo
 
- ### ORGANIZACIÓN DE MÓDULO 
+ - El alumno desarrollará con Swift aplicaciones para iOS altamente optimizadas, ágiles, veloces, interactivas y funcionales. Aprender los fundamentos del lenguaje Swift y del entorno iOS.
+
+
+### ORGANIZACIÓN DE MÓDULO 
  
- - [Sesión 1](): 
- - [Sesión 2](): 
- - [Sesión 3](): 
- - [Sesión 4](): 
- - [Sesión 5](): 
- - [Sesión 6](): 
- - [Sesión 7](): 
- - [Sesión 8]():
-
+ - [Sesión 1](https://github.com/beduExpert/A2-Swift-Intermedio/tree/master/Sesion-01): Table Views
+ - [Sesión 2](https://github.com/beduExpert/A2-Swift-Intermedio/tree/master/Sesion-02): Protocolos(multi-herencia)
+ - [Sesión 3](https://github.com/beduExpert/A2-Swift-Intermedio/tree/master/Sesion-03): Elementos de UIKit (sliders, switches, botones...)
+ - [Sesión 4](https://github.com/beduExpert/A2-Swift-Intermedio/tree/master/Sesion-04): Flujo del programa (navegación entre vistas)
+ - [Sesión 5](https://github.com/beduExpert/A2-Swift-Intermedio/tree/master/Sesion-05): Ciclo de vida de una vista
+ - [Sesión 6](https://github.com/beduExpert/A2-Swift-Intermedio/tree/master/Sesion-06): Manejo de memoria
+ - [Sesión 7](https://github.com/beduExpert/A2-Swift-Intermedio/tree/master/Sesion-07): Convivencia con Objective-C
+ - [Sesión 8](https://github.com/beduExpert/A2-Swift-Intermedio/tree/master/Sesion-08): Manejador de dependencias Cocoapod y Carthage.
 
