@@ -1,7 +1,7 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
+`Desarrollo Mobile` > `Swift Intermedio` 
 
-## Titulo de la Sesion 
+## Manejador de dependencias Cocoapod y Carthage
 
 ### OBJETIVOS 
 

@@ -1,15 +1,23 @@
 
 `Desarrollo Mobile` > `Swift Intermedio`
 
-## Titulo de la Sesion 
+## TableView 
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Lo que esperamos que el alumno aprenda al finalizar la sesión. 
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
+- Que es un TableView
+
+- TableView vs CollectionView
+
+- Funciones
+
+- Delegate y DataSource
+
+- TableView, métodos mas comunes
 
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
