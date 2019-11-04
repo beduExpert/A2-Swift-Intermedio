@@ -5,7 +5,8 @@
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesión. 
+- El alumno aprenderá uno de los componentes máss utilizados en las Apps: TableViews.
+- Además tendra un acercamiento con el uso de Protocolos.
 
 #### ORGANIZACION DE LA CLASE 
 
@@ -13,7 +14,7 @@
 
 - TableView vs CollectionView
 
-- Funciones
+- Funciones en Swift.
 
 - Delegate y DataSource
 

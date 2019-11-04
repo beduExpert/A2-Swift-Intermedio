@@ -9,8 +9,15 @@
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
+- Objective-C basics
+
+- Objective-C class
+
+- Bridging-Header
 
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
+- Usando Swift clases en Objective-C
+
+- Usando Clases de Objective-C en Swift. 

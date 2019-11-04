@@ -9,8 +9,19 @@
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
+- Como y que es ARC
+
+- Que es un retain cycle
+
+- Reference Types vs Value Types
+
+- Vida de un Objeto
+
+- Weak References
 
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
+
+
+https://www.raywenderlich.com/966538-arc-and-memory-management-in-swift

@@ -5,11 +5,26 @@
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- El alumno aprenderá los conceptos básicos de Protocolos, así como tambien a implementar herencia.
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
+- Optionals
+
+	- [Ejemplo 01](Ejemplo-01)
+	- [Reto 01](Reto-01)
+
+- Clases y Herencia
+
+	- [Ejemplo 01](Ejemplo-01)
+	- [Reto 01](Reto-01)
+
+- Protocolos
+
+	- [Ejemplo 01](Ejemplo-01)
+	- [Reto 01](Reto-01)
+
+- Protocolos y Herencia
 
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)

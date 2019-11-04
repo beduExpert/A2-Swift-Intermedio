@@ -9,7 +9,10 @@
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
+- Buttons and Actions
+- Alerts
+- Uso de Componentes de UIKit.
+- Carrusel con Page Control, ScrollView y UIImageView. 
 
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)

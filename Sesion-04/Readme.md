@@ -5,12 +5,13 @@
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Aprender mas a fondo como crear flujos de navegación en iOS, esta vez sin el uso del Storyboard.
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
-
+- Navegación simple entre vistas.
+- Navegación de vistas con barra de navigation.
+- Combinando estilos de navegación, modal y push.
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
