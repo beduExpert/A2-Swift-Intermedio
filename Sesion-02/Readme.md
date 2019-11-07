@@ -9,11 +9,6 @@
 
 #### ORGANIZACION DE LA CLASE 
 
-- Optionals
-
-	- [Ejemplo 01](Ejemplo-01)
-	- [Reto 01](Reto-01)
-
 - Clases y Herencia
 
 	- [Ejemplo 01](Ejemplo-01)
