@@ -2,27 +2,27 @@
 `Desarrollo Mobile` > `Swift Intermedio`
 
 
-## Titulo del Ejemplo
+## Cómo agregar un TableView a nuestro ViewController
+
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Ver las distintas maneras de agregar un TableViewController a una vista en Swift.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Ir a Storyboard, en el VC por defecto agregar un TableViewController desde el Library y ajustar los constraints.
 
-<details>
+2.- Conectar dicho VC a su clase de Swift.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+3.- Ejecutar la app.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+4.- Crear un TVC desde el componente por defecto, sin agregar el View a un VC.
 
+![](0.png)
 
+5.- Declarar un TVC mediante código y mostrarlo en pantalla.
