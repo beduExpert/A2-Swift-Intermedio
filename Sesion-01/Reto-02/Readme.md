@@ -2,8 +2,7 @@
 `Desarrollo Mobile` > `Swift Intermedio`
 
 
-## Implementar el resto de funciones en el proyecto de TableView.
-
+## Mostrar valores de propiedades de las funcionesd e Delegate y DataSource.
 
 ### OBJETIVO
 
@@ -22,7 +21,11 @@
 
 1.- Con base en el Ejemplo-03 de TableViews continuar la app.
 
-2.- En las funciones implementadas, incluir una función `print(#function)` y ver en el Debugger Area como se van ejecutando las funciones.
- 
+2.- De las funciones que quedaron vacias del ejemplo-02, imprimir los valores de cada variable en dichas funciones. Cada variable tiene propiedades, imprimirlos tambien, ejemplo de una propiedad:
+
+```
+indexPath.row
+```
+
 
 
