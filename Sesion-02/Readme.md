@@ -14,7 +14,9 @@
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
-- Protocolos
+- Protocolos Conceptos
+
+- Protocolos Sintaxis
 
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
