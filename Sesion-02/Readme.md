@@ -5,7 +5,7 @@
 
 ### OBJETIVOS 
 
-- El alumno aprenderá los conceptos básicos de Protocolos, así como tambien a implementar herencia.
+- El alumno aprenderá los conceptos básicos de Clases y Protocolos, así como tambien a implementar herencia.
 
 #### ORGANIZACION DE LA CLASE 
 
