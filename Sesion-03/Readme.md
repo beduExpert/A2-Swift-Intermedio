@@ -9,7 +9,7 @@
 
 #### ORGANIZACION DE LA CLASE 
 
-- Buttons and Actions
+- IBOutlets and Actions
 
 - Alerts
 
