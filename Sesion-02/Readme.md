@@ -9,7 +9,7 @@
 
 #### ORGANIZACION DE LA CLASE 
 
-- Clases y Herencia
+- Clases, Herencia y Polimorfismo
 
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
