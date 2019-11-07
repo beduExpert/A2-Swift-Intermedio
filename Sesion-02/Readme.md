@@ -5,7 +5,7 @@
 
 ### OBJETIVOS 
 
-- El alumno aprenderá los conceptos básicos de Clases y Protocolos, así como tambien a implementar herencia.
+- Aprender el concepto de Herencia y Polimorfismo. Aplicar dichos conecptos a Clases y Protocolos.
 
 #### ORGANIZACION DE LA CLASE 
 
