@@ -34,3 +34,4 @@ let fruits = ["Apple", "Orange", "Blueberry"]
 
 5.- Ejecutar la App en almenos dos simuladores con pantallas distintas.
 
+![](1.png)
