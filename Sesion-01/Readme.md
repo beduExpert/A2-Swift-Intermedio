@@ -16,24 +16,21 @@
 - TableView Controller.
 
 	- [Ejemplo 01](Ejemplo-01)
-	- [Reto 01](Reto-01)
+	- [Ejemplo 02](Ejemplo-02)
 
 - Prototype Cells.
-
-	- [Ejemplo 02](Ejemplo-02)
-	- [Reto 02](Reto-02)
 
 - Delegate y DataSource
 
 - TableView, métodos mas comunes
 
 	- [Ejemplo 03](Ejemplo-03)
-	- [Reto 03](Reto-03)
+	- [Reto 01](Reto-01)
 
 - Funciones en Swift.
 
 	- [Ejemplo 04](Ejemplo-04)
-	- [Reto 04](Reto-04)
+	- [Reto 02](Reto-02)
 
 
 ### Postwork
