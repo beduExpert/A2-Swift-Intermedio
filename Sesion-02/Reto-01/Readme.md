@@ -1,27 +1,68 @@
  
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
+`Desarrollo Mobile` > `Swift Intermedio`  
 	
-## Titulo del Ejemplo 
+## Definiendo una Clase
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Con base a lo aprendido del Ejemplo-01, el alumno debe de ser capaz de definir una clase por su cuenta.
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Haber concluido el Ejemplo-01.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Crear en un Playground una definición de clase Persona.
+
+2.- La clase Persona debe incluir properties y methods.
+
+3.- Adicionalmente, agregar modificadores de acceso.
 
 <details>
+        <summary>Solución</summary>
+<p> Ejemplo de la clase Persona: </p>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+```
+class Person {
+  var name: String
+  var age: Int
+  var height: Float
+  var weight: Float
+  
+  init(name: String, age: Int, height: Float, weight: Float) {
+    self.name = name
+    self.age = age
+    self.height = height
+    self.weight = weight
+  }
+  
+  func run() {
+    print("Person is running")
+  }
+}
+```
+<p> Ejemplo de la clase Persona con modificadores de acceso: </p>
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+```
+public class Person {
+  private var name: String
+  private var age: Int
+  private var height: Float
+  private var weight: Float
+  
+  init(name: String, age: Int, height: Float, weight: Float) {
+    self.name = name
+    self.age = age
+    self.height = height
+    self.weight = weight
+  }
+  
+  public func run() {
+    print("Person is running")
+  }
+}
+```
 
+</details>
