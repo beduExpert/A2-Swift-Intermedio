@@ -5,7 +5,7 @@
 
 ### OBJETIVOS 
 
-- Aprender mas a fondo como crear flujos de navegación en iOS, esta vez sin el uso del Storyboard.
+- Aprender mas a fondo como crear flujos de navegación en iOS, esta vez sin el uso del Storyboard y utilizando TableViews.
 
 #### ORGANIZACION DE LA CLASE 
 
