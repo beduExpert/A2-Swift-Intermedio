@@ -1,27 +1,56 @@
  
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
+`Desarrollo Mobile` > `Swift Intermedio` 
+
 	
-## Titulo del Ejemplo 
+## Agregar más características al protocolo Pingüino y Águila.
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Aprender mas sobre el uso de herencia, extensiones y protocolos.
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Haber concluido el Ejemplo-04.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1. Con base al Ejemplo-04, agregar más características a las definiciones de Pingüino y Águila.
+
+2. Implementar mediante extensiones el valor de Feathers como True por defecto.
 
 <details>
+        <summary>Solución</summary>
+<p> Agregamos protocolos con mas carácteristicas, como: </p>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+```
+protocol Beauty {
+  var isCute: Bool { get set }
+  var isElegant: Bool { get set }
+}
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+protocol Resistant {
+  var cold: Bool { get set }
+}
 
+protocol Power {
+  var powerful: Bool { get set }
+}
+```
+
+<p>Comformamos el Protocolo en cada definición. </p>
+
+```
+struct Penguin: Bird, Swimmable, Beauty, Resistant {
+  var isElegant: Bool
+  var isCute: Bool
+  var cold: Bool
+}
+
+struct Eagle: Bird, Flyable, Power, Beauty {
+  var powerful: Bool
+  var isCute: Bool
+  var isElegant: Bool
+}
+```
+</details>

@@ -1,27 +1,26 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+`Desarrollo Mobile` > `Swift Intermedio` 
 
-## Titulo del Ejemplo
+## Protocolos
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- A definir protocolos, con sus proiedades y métodos.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Playgrounds.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Definir un protocolo que contenga almenos un property de tipo **GET** y uno de tipo **GET-SET**.
 
-<details>
+2.- Agregar dos funciones, una con retorno y una sin retorno, ej:
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+```
+func myFunction()
+func myFunction2() -> Int
+```
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
+3.- Teniendo el protocolo, definir una Clase, esta clase debe conformar el Protocolo.
 

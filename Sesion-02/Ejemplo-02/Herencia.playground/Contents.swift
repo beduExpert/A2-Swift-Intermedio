@@ -14,4 +14,15 @@ class Car {
   }
 }
 
+class Taxi: Car {
+  var rate: Int
+  var hasPassenger: Bool
+
+  init(rate: Int, hasPassenger: Bool) {
+    self.rate = rate
+    self.hasPassenger = hasPassenger
+    super.init(wheels: 4, doors: 5, color: .yellow, motor: "taxi-motor")
+  }
+}
+
 

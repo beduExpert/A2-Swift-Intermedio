@@ -1,27 +1,21 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
 
-## Titulo del Ejemplo
+`Desarrollo Mobile` > `Swift Intermedio` 
+
+## Herencia y Polimorfismo
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Definir clases propias y reforzar el concepto de Constructor.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1.- Playgrounds.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- En el playground de la clase Car. Definir la clase Taxi y la clase camioneta.
 
-<details>
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
+2.- Taxi debe implementar el constructor de su clase padre.
 
