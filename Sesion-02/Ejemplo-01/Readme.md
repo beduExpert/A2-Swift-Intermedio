@@ -1,27 +1,48 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+`Desarrollo Mobile` > `Swift Intermedio` 
 
-## Titulo del Ejemplo
+## Clases y Herencia
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Conocer el concepto de clase y herencia. Implementar una clase padre y una clase hija.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Conceptos básicos de Swift como Variables, constantes, operadores y tipos de datos.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Definiendo métodos de clase
 
-<details>
+Abrir un playground y definir la clase Car.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+Definir los métodos arrancar y frenar.
 
 
+2.- Definir una clase Taxi y una clase Camioneta.
+
+En el playground de la clase Car.
+
+Definir la clase **Taxi** y la clase **Camioneta**, ambas heredan de **Car**.
+
+**Tip**: Taxi debe implementar el constructor de su clase padre.
+
+```
+super.init(wheels: 4, doors: 5, color: .yellow, motor: "taxi-motor")
+```
+
+Ejemplo de clase Taxi:
+
+```
+class Taxi: Car {
+  var rate: Int
+  var hasPassenger: Bool
+
+  init(rate: Int, hasPassenger: Bool) {
+    self.rate = rate
+    self.hasPassenger = hasPassenger
+    super.init(wheels: 4, doors: 5, color: .yellow, motor: "taxi-motor")
+  }
+}
+```
