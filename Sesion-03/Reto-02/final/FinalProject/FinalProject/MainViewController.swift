@@ -23,6 +23,8 @@ class MainViewController: UIViewController {
     tableView.delegate = self
     tableView.dataSource = self
     tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellId")
+    mapView.showsUserLocation = true
+    mapView.delegate = self
     
     let coordinates = Coordinates()
     let locationAngel = CLLocationCoordinate2D(latitude: coordinates.angel.lat,
@@ -32,11 +34,11 @@ class MainViewController: UIViewController {
     
     locations.append(coordinates.angel.name)
     locations.append(coordinates.palace.name)
-
+    
     let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
     let region = MKCoordinateRegion(center: locationAngel, span: span)
     mapView.setRegion(region, animated: true)
-
+    
     addAnnotation(coordinate: locationAngel,
                   name: coordinates.angel.name,
                   subtitle: coordinates.angel.subtitle)
@@ -49,7 +51,30 @@ class MainViewController: UIViewController {
   @IBAction func logout(_ sender: Any) {
     // logout actions
   }
-
+  
+  @IBAction func changeMapStyle(_ sender: Any) {
+    if segmented.selectedSegmentIndex == 0 {
+      mapView.mapType = .standard
+    } else {
+      mapView.mapType = .satellite
+    }
+  }
+  
+  @IBAction func showPath(_ sender: Any) {
+    if showPathSwitch.isOn {
+      let coordinates = Coordinates()
+      let locationAngel = CLLocationCoordinate2D(latitude: coordinates.angel.lat, longitude: coordinates.angel.long)
+      let locationPalace = CLLocationCoordinate2D(latitude: coordinates.palace.lat, longitude: coordinates.palace.long)
+      let sourcePlacemark = MKPlacemark(coordinate: locationAngel, addressDictionary: nil)
+      let destinationPlacemark = MKPlacemark(coordinate: locationPalace, addressDictionary: nil)
+      let sourceMapItem = MKMapItem(placemark: sourcePlacemark)
+      let destinationMapItem = MKMapItem(placemark: destinationPlacemark)
+      directions(source: sourceMapItem, destination: destinationMapItem)
+    } else {
+      self.mapView.removeOverlays(self.mapView.overlays)
+    }
+  }
+  
   private func addAnnotation(coordinate: CLLocationCoordinate2D, name: String, subtitle: String) {
     let annotation = MKPointAnnotation()
     annotation.coordinate = coordinate
@@ -57,10 +82,26 @@ class MainViewController: UIViewController {
     annotation.subtitle = subtitle
     mapView.addAnnotation(annotation)
   }
+  
+  private func directions(source: MKMapItem, destination: MKMapItem) {
+    // Calculate the direction
+    let directionRequest = MKDirections.Request()
+    directionRequest.source = source
+    directionRequest.destination = destination
+    directionRequest.transportType = .automobile
+    let directions = MKDirections(request: directionRequest)
+    directions.calculate { (response, error) -> Void in
+      guard let response = response else { return }
+      let route = response.routes[0]
+      self.mapView.addOverlay((route.polyline), level: MKOverlayLevel.aboveRoads)
+      let rect = route.polyline.boundingMapRect
+      self.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
+    }
+  }
 }
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
-
+  
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return locations.count
   }
@@ -71,5 +112,14 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     cell.textLabel?.text = locations[indexPath.row]
     return cell
+  }
+}
+
+extension MainViewController: MKMapViewDelegate {
+  func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+    let renderer = MKPolylineRenderer(overlay: overlay)
+    renderer.strokeColor = UIColor.red
+    renderer.lineWidth = 4.0
+    return renderer
   }
 }

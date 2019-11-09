@@ -197,7 +197,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kR8-89-Jd1">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kR8-89-Jd1">
                                 <rect key="frame" x="0.0" y="100" width="414" height="394"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="394" id="Ers-ue-L0f"/>
@@ -221,9 +221,15 @@
                                     <segment title="Map"/>
                                     <segment title="Terrain"/>
                                 </segments>
+                                <connections>
+                                    <action selector="changeMapStyle:" destination="1z8-Ml-9zq" eventType="valueChanged" id="NWm-eG-ixf"/>
+                                </connections>
                             </segmentedControl>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8ma-0G-JFP">
                                 <rect key="frame" x="336" y="505" width="51" height="31"/>
+                                <connections>
+                                    <action selector="showPath:" destination="1z8-Ml-9zq" eventType="valueChanged" id="WPb-bG-e7J"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show path" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5U-Wr-guf">
                                 <rect key="frame" x="31" y="510" width="170" height="21"/>
