@@ -1,27 +1,22 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+`Desarrollo Mobile` > `Swift Intermedio` 
 
-## Titulo del Ejemplo
+## AlertViews
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Aprender la implementación de AlertViews y UIAlertActions.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Reto-02 completado o en su defecto Ejemplo-02.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+En nuestra app, agregaremos un AlertController en el botón de Logout.
 
-<details>
+1. Al presionar Sí o Confirmar deberá regresar a la pantalla de Login.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+2. Al presionar Cancelar deberá simplemente desaparecer el Alert.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
-
+![](0.gif)
