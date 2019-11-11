@@ -1,27 +1,40 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+`Desarrollo Mobile` > `Swift Intermedio` 
 
-## Titulo del Ejemplo
+
+## Componentes de UIKit
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Aprender a utilizar algunos de los componentes de UIKit y conectarlos al ViewController.
+
+- En el módulo anterior de *Swift Basics* se desarrolló una App sencilla de Login. 
+En esta sesión continuaremos con su desarrollo.
+Integraremos más componentes de UIKit.
+
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Utilizar el [template](template) proporcionado.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Comenzaremos el proyecto utilizando el Template proporcionado.
 
-<details>
+2.- En la vista posterior al Login, recrearemos el sig. Layout.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+![](0.png)
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+3.- Ajustar los constraints.
 
+![](2.png)
 
+4.- Agregaremos el Framework de MapKit al proyecto.
+
+5.- Conectamos los IBOutlets al ViewController.
+
+6.- Agregaremos el Framework al ViewController correspondiente a esta nueva vista.
+
+7.- Agregamos Delegates correspondientes.
+
+![](1.png)
