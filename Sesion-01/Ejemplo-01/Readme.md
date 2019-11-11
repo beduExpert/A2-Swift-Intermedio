@@ -7,7 +7,7 @@
 
 ### OBJETIVO
 
-- Ver las distintas maneras de agregar un TableViewController a una vista en Swift.
+- Usar las distintas maneras de agregar un TableViewController a una vista en Swift.
 
 #### REQUISITOS
 
