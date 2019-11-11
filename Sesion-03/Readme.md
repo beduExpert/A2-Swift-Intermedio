@@ -19,7 +19,7 @@
 	- [Ejemplo 02](Ejemplo-02)
 	- [Reto 02](Reto-02)
 
-- AlertViews y AlertViewController
+- AlertViews y AlertViewController.
 
 	- [Ejemplo 03](Ejemplo-03)
 	- [Reto 03](Reto-03)
