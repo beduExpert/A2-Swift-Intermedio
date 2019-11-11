@@ -1,27 +1,32 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+`Desarrollo Mobile` > `Swift Intermedio` 
 
-## Titulo del Ejemplo
+## Integrando mas componentes de UIKit
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Después de haber concluido el Reto-02, agregaremos mas componentes de UIKit.
+- Al agregar mas elementos de UIKit también se reforzará el uso de Constraints.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Reto-02 concluido, este ejemplo se basará en dicho proyecto.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Es momento de agregar más componentes de UIKit a la vista.
 
-<details>
+1. Agregaremos un UISegmentedControl que permitirá cambiar el estilo del Mapa.
+Además cambiaremos el Texto de Label y ajustaremos los constraints.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+![](0.png)
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+2. Agregaremos un UISwitch que mostrará el camino entre las ubicaciones. No olvides apagar por defecto el Switch.
+
+![](1.png)
+
+El resultado final debe parecerse al de la sig. pantalla.
+
+![](2.png)
 
 
