@@ -24,7 +24,9 @@ El primer view controller en el array es el **Root** View Controller y represent
 
 Partiendo de la vista correspondiente a **ViewControllerA** pasaremos a un nuevo VC, **ViewControllerB**.
 
-1. Crearemos un nuevo proyecto, luego agregaremos dos VC en el Storyboard.
+1. Crearemos un nuevo proyecto, luego agregaremos dos VC en el Storyboard. Nos aseguramos de agregar el Navigation.
+
+![](1.png)
 
 2. Mediante un **Push** navegaremos del `VC1 -> VC2`.
 
