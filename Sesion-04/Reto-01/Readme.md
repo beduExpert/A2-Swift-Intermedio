@@ -1,27 +1,33 @@
- 
+`Desarrollo Mobile` > `Swift Intermedio` 
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Ampliando el Stack
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Con base a lo aprendido en el Ejemplo-01, implementar mas a fondo el uso de Stacks
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+0. Xcode 11
+1. Ejemplo-01 concluido y funcionando.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1. Con base al Ejemplo-01, implementar un nuevo flujo partiendo del ViewController inicial, agregar almenos 3 vistas.
+
+2. En la última vista del nuevo flujo, implementar un código que permita regresar a la vista **ANTERIOR**.
+
+3. En la última vista del nuevo flujo, implementar un código que permita regresar a la vista **INICIAL**.
+
 
 <details>
-
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
+   <summary>Solución</summary>
+	<p> Para regresar a la vista ANTERIOR, dentro del IBAction asignado al Button, implementamos: </p>
+	```
+	navigationController?.popViewController(animated: true)
+	```
+	<p> Para regresar a la vista INICIAL, dentro del IBAction asignado al Button, implementamos: </p>
+	```
+	navigationController?.popToRootViewController(animated: true)
+	```
+</details>
