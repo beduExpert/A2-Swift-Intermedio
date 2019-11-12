@@ -27,7 +27,7 @@ Veamos los sig. ejemplos:
 
 Un `UINavigationController` tendra un Array de *ViewControllers*, conocido como el Stack.
 
-Dicho esto, un ViewController que fué presentado de manera *modal* debe utilizar la operación *dismiss* para ocultarlo.
+Dicho esto, un `UIViewController` que fué presentado de manera *modal* debe utilizar la operación *dismiss* para ocultarlo.
 
 ```
 // UINavigationController presented modally
@@ -39,7 +39,9 @@ vd.dismiss(animated: true, completion: nil)
 ```
 
 **Realizar**: 
-> Mostrar un ViewController mediante *push* y en el segundo ViewController regresar mediante *dismiss*.
+> Mostrar un ViewController mediante *push* o *present* y en el segundo ViewController regresar mediante *dismiss*.
+
+![](1.gif)
 
 2.- Ya que los `UINavigationController` poseen un `UIViewController` en su *Stack*, pueden ser presentados tanto de manera **modal** como por via **push**. Entonces, una vez *Pusheado* un ViewController, para regresar a la vista anterior utilizamos un *Pop*.
 
@@ -50,7 +52,6 @@ Vemos que estas operaciones son propias de la estructura de datos: **Stack**
 navigationController?.popViewController(animated: true)
 
 // UINavigationController pops to a specific UIViewController that was pushed within the UINavigationController's stack
-
 let vc = ViewController()
 navigationController?.popToViewController(vc, animated: true)
 
@@ -61,8 +62,10 @@ navigationController?.popToRootViewController(animated: true)
 **Realizar**: 
 > Crear un flujo de navegación entre tres ViewControllers, en el tercer ViewController implementar las operaciones de Pop mencionadas.
 
+![](1.png)
+![](2.gif)
 
-3.- Aunque es posible presentar UIViewControllers tanto de manera modal como por push, los UIViewControllers solo pueden mostrar otros UIViewControllers. Por lo tanto, UIViewControllers solo pueden ser eliminados del Stack mediante *dismiss*, a menos que ellos esten dentro de un UINavigationController stack.
+3.- Aunque es posible presentar `UIViewControllers` tanto de manera modal como por push, los `UIViewControllers` solo pueden mostrar otros `UIViewControllers`. Por lo tanto, `UIViewControllers` solo pueden ser eliminados del Stack mediante *dismiss*, a menos que ellos esten dentro de un `UINavigationController` Stack.
 
 **Realizar**: 
 > Demostrar que no es posible utilizar la operación POP cuando vamos al ViewController2 no utilizando navigation.
