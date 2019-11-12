@@ -7,7 +7,7 @@
 
 ### OBJETIVO
 
-- En este demo utilizaremos un TableView para mostrar cadenas de texto simples.
+- Utilizar un TableView para mostrar cadenas de texto simples.
 
 
 #### REQUISITOS
