@@ -21,7 +21,7 @@
 
 1.- Con base en el Reto-01 de TableViews continuar la app.
 
-2.- De las funciones de TableView implementadas del **Reto-01**, imprimir los valores de cada variable en dichas funciones. Cada variable tiene propiedades, imprimirlos tambien, ejemplo de una propiedad:
+2.- De las funciones de TableView implementadas del **Reto-01**, imprimir los valores de cada variable en dichas funciones. Cada variable tiene propiedades, imprimirlos también, ejemplo de una propiedad:
 
 ```
 print(indexPath.row)
