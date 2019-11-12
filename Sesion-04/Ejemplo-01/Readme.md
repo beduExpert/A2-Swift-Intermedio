@@ -1,11 +1,11 @@
 
 `Desarrollo Mobile` > `Swift Intermedio` 
 
-## Creando una App con TabBar Controller
+## UINavigation Controller, navigation stack
 
 ### OBJETIVO
 
-- Aprender a utilizar uno de los componentes principales en la navegación de apps, el TabBar controller.
+- Aprender como funciona el sistema de stacks al presentar una vista.
 
 #### REQUISITOS
 
@@ -13,54 +13,109 @@
 
 #### DESARROLLO
 
-Crear un TabBarController, con tres vistas o mas. 
+En esta sesión nos enforamemos en el Navigaton Stack.
+Antes de comenzar, un objeto de tipo navigation controller maneja sus vistas utilizando un Array, conocido como navigation stack.
 
-1. Comenzamos creando una instancia de TabBarController():
+El primer view controller en el array es el **Root** View Controller y representa el stack que esta *mas al fondo*. El último VC en el array, él que esta mas por encima de todos y representa el ViewController que será mostrado, a este VC se le conoce como **the topmost item**.
 
-```
-let tabBarController = UITabBarController()
-```
+![](0.png)
 
-2. Posteriormente creamos tres instancias de ViewController.
+#### Como enviar un ViewController al Top del Navigation Stack
 
-```
-let viewController1 = ViewController()
-viewController1 = “View1”
-viewController1.view.backgroundColor = UIColor.orange
+Partiendo de la vista correspondiente a **ViewControllerA** pasaremos a un nuevo VC, **ViewControllerB**.
 
-let viewController2 = ViewController()
-viewController2.title = “View2”
-viewController2.view.backgroundColor = UIColor.blue
+1. Crearemos un nuevo proyecto, luego agregaremos dos VC en el Storyboard.
 
-let viewController3 = ViewController()
-viewController3.title = “View3”
-viewController3.view.backgroundColor = UIColor.cyan
-```
-
-3. Asignamos cada View a un botón del TabBar.
+2. Mediante un **Push** navegaremos del `VC1 -> VC2`.
 
 ```
-viewController1.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
-
-viewController2.tabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 1)
-
-viewController3.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 2)
+let storyBoard = UIStoryboard(name: "Main", bundle:nil)
+let vc = storyBoard.instantiateViewControllerWithIdentifier("nextView") as! ViewControllerB
+self.presentViewController(vc, animated:true, completion:nil)
 ```
 
-4. Asignamos los controllers como ViewControllers del TabBar como un array.
+Ahora tenemos dos VC en el Stack, el VC2 es el **topmost item**.
 
 ```
-let controllers = [viewController1, viewController2, viewController3]
-tabBarController.viewControllers = controllers
-```
-
-5. Por último, creamos y asignamos un UINavigationController por cada ViewController.
-
-```
-tabBarController.viewControllers = controllers.map { 
-	UINavigationController(rootViewController: $0)
+@IBAction func buttonAction(_ sender: Any) {
+	let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+	let viewControllerB = storyBoard.instantiateViewControllerWithIdentifier("nextView") as! ViewControllerB
+	self.presentViewController(viewControllerB, animated:true, completion:nil)
 }
 ```
+
+#### Como enviar un ViewController al Top del Navigation Stack
+
+Ahora que tenemos un stack de VC, podemos manipular un poco el orden.
+
+Agregaremos un tercer VC, este viewController reemplazará la posición del VC2.
+
+3. Creamos una instancia de VC3
+
+```
+let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+let viewControllerC = storyBoard.instantiateViewControllerWithIdentifier("ViewControllerC") as! ViewControllerC
+```
+
+4. Obtenemos la lista de VC.
+
+```
+var stack = self.navigationController?.viewControllers
+```
+
+5. Removemos el último VC, el correspondiente a VC2.
+
+```
+stack!.removeLast()
+```
+
+6. Agregamos el VC a nuestro Stack.
+
+```
+stack!.append(viewControllerC)
+```
+
+7. Pasamos el stack al navigation controller.
+
+```
+self.navigationController?.setViewControllers(stack!, animated: true)
+```
+
+Ahora veamos todo el código en un solo `IBAction`:
+
+```
+@IBAction func buttonAction(_ sender: Any) {
+	let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+	let viewControllerC = storyBoard.instantiateViewControllerWithIdentifier("ViewControllerC") as! ViewControllerC
+	var stack = self.navigationController?.viewControllers
+	stack!.removeLast()      
+	stack!.append(viewControllerC)          
+	self.navigationController?.setViewControllers(stack!, animated: true)
+}
+```
+
+#### Como pasar al ViewControllerC y convertirlo en el RootViewController
+
+1.  Para lograr esto, necesitamos hacer que el RootViewController sea el ViewControllerC, haciendo este VC el primero en el Stack.
+
+```
+let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+let viewControllerC = storyBoard.instantiateViewControllerWithIdentifier("ViewControllerC") as! ViewControllerC
+var stack = self.navigationController?.viewControllers          
+stack!.removeAll()
+stack!.append(viewControllerC)
+self.navigationController?.setViewControllers(stack!, animated: true)
+```
+
+
+
+
+
+
+
+
+
+
 
 
 

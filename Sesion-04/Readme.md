@@ -10,12 +10,10 @@
 
 #### ORGANIZACION DE LA CLASE 
 
-- UINavigationController y UITabBarController 
+- UINavigation Controller, navigation stack.
 
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
-
-- UINavigation Controller, navigation stack.
 
 - Pushing, Popping, Presenting, & Dismissing ViewControllers.
 
