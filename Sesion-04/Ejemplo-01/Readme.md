@@ -29,32 +29,24 @@ Partiendo de la vista correspondiente a **ViewControllerA** pasaremos a un nuevo
 2. Mediante un **Push** navegaremos del `VC1 -> VC2`.
 
 ```
-let storyBoard = UIStoryboard(name: "Main", bundle:nil)
-let vc = storyBoard.instantiateViewControllerWithIdentifier("nextView") as! ViewControllerB
-self.presentViewController(vc, animated:true, completion:nil)
+let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+let viewControllerB = storyBoard.instantiateViewController(withIdentifier: "VC2") as! ViewControllerB  
+self.navigationController?.pushViewController(viewControllerB, animated: true)
 ```
 
 Ahora tenemos dos VC en el Stack, el VC2 es el **topmost item**.
 
-```
-@IBAction func buttonAction(_ sender: Any) {
-	let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-	let viewControllerB = storyBoard.instantiateViewControllerWithIdentifier("nextView") as! ViewControllerB
-	self.presentViewController(viewControllerB, animated:true, completion:nil)
-}
-```
-
-#### Como enviar un ViewController al Top del Navigation Stack
+#### Como reemplazar un ViewController en el Stack
 
 Ahora que tenemos un stack de VC, podemos manipular un poco el orden.
 
 Agregaremos un tercer VC, este viewController reemplazará la posición del VC2.
 
-3. Creamos una instancia de VC3
+3. Creamos una instancia de VC3:
 
 ```
 let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-let viewControllerC = storyBoard.instantiateViewControllerWithIdentifier("ViewControllerC") as! ViewControllerC
+let viewControllerC = storyBoard.instantiateViewControllerWithIdentifier("VC3") as! ViewControllerC
 ```
 
 4. Obtenemos la lista de VC.
@@ -85,12 +77,12 @@ Ahora veamos todo el código en un solo `IBAction`:
 
 ```
 @IBAction func buttonAction(_ sender: Any) {
-	let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-	let viewControllerC = storyBoard.instantiateViewControllerWithIdentifier("ViewControllerC") as! ViewControllerC
-	var stack = self.navigationController?.viewControllers
-	stack!.removeLast()      
-	stack!.append(viewControllerC)          
-	self.navigationController?.setViewControllers(stack!, animated: true)
+let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+let viewControllerC = storyBoard.instantiateViewController(withIdentifier: "VC3") as! ViewControllerC
+var stack = self.navigationController?.viewControllers
+stack!.removeLast()
+stack!.append(viewControllerC)
+self.navigationController?.setViewControllers(stack!, animated: true)
 }
 ```
 
@@ -99,14 +91,25 @@ Ahora veamos todo el código en un solo `IBAction`:
 1.  Para lograr esto, necesitamos hacer que el RootViewController sea el ViewControllerC, haciendo este VC el primero en el Stack.
 
 ```
+private func removeAll() {
 let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-let viewControllerC = storyBoard.instantiateViewControllerWithIdentifier("ViewControllerC") as! ViewControllerC
-var stack = self.navigationController?.viewControllers          
+let viewControllerC = storyBoard.instantiateViewController(withIdentifier: "VC3") as! ViewControllerC
+var stack = self.navigationController?.viewControllers
 stack!.removeAll()
 stack!.append(viewControllerC)
 self.navigationController?.setViewControllers(stack!, animated: true)
+}
 ```
 
+#### Resultados
+
+Navegando al VC3 y al regresar nos saltamos el 2do VC:
+
+![](0.gif)
+
+Navegando hasta el VC3, y volviendolo RootViewController.
+
+![](1.gif)
 
 
 
