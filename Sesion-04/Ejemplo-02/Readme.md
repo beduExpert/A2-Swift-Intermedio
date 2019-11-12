@@ -1,27 +1,74 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+`Desarrollo Mobile` > `Swift Intermedio` 
 
-## Titulo del Ejemplo
+## Pushing, Popping, Presenting, y Dismissing ViewControllers
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Aprender las diferencias entre las operaciones para mostrar y ocultar ViewControllers.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1.- Xcode 11
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+En esta fase del desarrollo se ha aprendido que para mostrar un ViewController utilizamos la función `push()`.
 
-<details>
+En el siguiente ejemplo implementaremos cada uno de los siguientes puntos.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+0.- Creamos un nuevo proyecto en Xcode, con Swift y Storyboards. Luego creamos un flujo de tres vistas de navegación.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+Veamos los sig. ejemplos:
+
+1.- Tanto `UIViewController` como `UINavigationController` son de tipo `UIViewController`. Es decir, un `UINavigationController` hereda de un `UIViewController`. De acuerdo a la documentación oficial de Apple:
+
+![](0.png)
+
+Un `UINavigationController` tendra un Array de *ViewControllers*, conocido como el Stack.
+
+Dicho esto, un ViewController que fué presentado de manera *modal* debe utilizar la operación *dismiss* para ocultarlo.
+
+```
+// UINavigationController presented modally
+navigationController?.dismiss(animated: true, completion: nil)
+
+// UIViewController presented modally
+let vc = ViewController()
+vd.dismiss(animated: true, completion: nil)
+```
+
+**Realizar**: 
+> Mostrar un ViewController mediante *push* y en el segundo ViewController regresar mediante *dismiss*.
+
+2.- Ya que los `UINavigationController` poseen un `UIViewController` en su *Stack*, pueden ser presentados tanto de manera **modal** como por via **push**. Entonces, una vez *Pusheado* un ViewController, para regresar a la vista anterior utilizamos un *Pop*.
+
+Vemos que estas operaciones son propias de la estructura de datos: **Stack**
+
+```
+// UINavigationController pops the current UIViewController that was pushed
+navigationController?.popViewController(animated: true)
+
+// UINavigationController pops to a specific UIViewController that was pushed within the UINavigationController's stack
+
+let vc = ViewController()
+navigationController?.popToViewController(vc, animated: true)
+
+// UINavigationController poops to the rootViewController (the first VC on the navigation's stack)
+navigationController?.popToRootViewController(animated: true)
+```
+
+**Realizar**: 
+> Crear un flujo de navegación entre tres ViewControllers, en el tercer ViewController implementar las operaciones de Pop mencionadas.
+
+
+3.- Aunque es posible presentar UIViewControllers tanto de manera modal como por push, los UIViewControllers solo pueden mostrar otros UIViewControllers. Por lo tanto, UIViewControllers solo pueden ser eliminados del Stack mediante *dismiss*, a menos que ellos esten dentro de un UINavigationController stack.
+
+**Realizar**: 
+> Demostrar que no es posible utilizar la operación POP cuando vamos al ViewController2 no utilizando navigation.
+
+
+
+
 
 
