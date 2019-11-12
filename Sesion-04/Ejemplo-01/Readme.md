@@ -1,27 +1,66 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+`Desarrollo Mobile` > `Swift Intermedio` 
 
-## Titulo del Ejemplo
+## Creando una App con TabBar Controller
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Aprender a utilizar uno de los componentes principales en la navegación de apps, el TabBar controller.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Crear un TabBarController, con tres vistas o mas. 
 
-<details>
+1. Comenzamos creando una instancia de TabBarController():
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+```
+let tabBarController = UITabBarController()
+```
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+2. Posteriormente creamos tres instancias de ViewController.
+
+```
+let viewController1 = ViewController()
+viewController1 = “View1”
+viewController1.view.backgroundColor = UIColor.orange
+
+let viewController2 = ViewController()
+viewController2.title = “View2”
+viewController2.view.backgroundColor = UIColor.blue
+
+let viewController3 = ViewController()
+viewController3.title = “View3”
+viewController3.view.backgroundColor = UIColor.cyan
+```
+
+3. Asignamos cada View a un botón del TabBar.
+
+```
+viewController1.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
+
+viewController2.tabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 1)
+
+viewController3.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 2)
+```
+
+4. Asignamos los controllers como ViewControllers del TabBar como un array.
+
+```
+let controllers = [viewController1, viewController2, viewController3]
+tabBarController.viewControllers = controllers
+```
+
+5. Por último, creamos y asignamos un UINavigationController por cada ViewController.
+
+```
+tabBarController.viewControllers = controllers.map { 
+	UINavigationController(rootViewController: $0)
+}
+```
+
 
 
