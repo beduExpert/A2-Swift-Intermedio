@@ -1,26 +1,42 @@
  
 `Desarrollo Mobile` > `Swift Intermedio` 
 	
-## Titulo del Ejemplo 
+## Navegación completa por código
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- En la sesión 3 realizamos un proyecto de una app con login y vista de mapas. En este reto utilizaremos el proyecto final para implementar los flujos de navegación mediante código únicamente.
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Proyecto final de la sesión 03 funcionando.
+
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Abrir el Proyecto Final.
+
+2.- Dirigirnos al Storyboard y detectar el Segue:
+
+![](0.png)
+
+3.- Lo eliminamos e implementamos el código para mostrar esa misma vista.
 
 <details>
+        <summary>Solución</summary>
+<p> Una vez eliminado el Segue que conecta a Login con Register...</p>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+<p> Agregar un ID al Viewcontroller de Registro de cuenta.</p>
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+<p> Ir al ViewController de login y agregar un IBAction al botón Registrar.</p>
 
+<p> Este IBAction implementará el sig. código: </p>
+
+```
+  @IBAction func register(_ sender: Any) {
+    let vc = storyboard?.instantiateViewController(identifier: "registerVC") as! AccountRegisterViewController
+    self.navigationController?.pushViewController(vc, animated: true)
+  }
+```
+
+</details>
