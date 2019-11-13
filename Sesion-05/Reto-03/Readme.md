@@ -1,27 +1,31 @@
  
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
+`Desarrollo Mobile` > `Swift Intermedio` 
 	
-## Titulo del Ejemplo 
+## Implementando Child View Controllers
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Identificar como funcionan los métodos de clase de View en conjunto con los de ViewController.
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Xcode 11
+2. Clase de UIView creada en el Ejemplo-03
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Teniendo la Subclase de UIView…
 
-<details>
+1. Implementar un Child View Controller como se vio en los slides.
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+2. Los View Controllers deberán tener a su vez el ciclo de vida implementado con funciones `print()`.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+3. Crear un nuevo proyecto en Xcode, esta vez agregar dos ViewControllers.
+
+4. Cada ViewController agregar las funciones de ciclo de vida apoyados de un `print(#function)` y de un `print(nombreViewController`.
+
+En el ViewController principal agregar estos dos VC de una manera similar a esta.
+
+![](0.png)
+
 

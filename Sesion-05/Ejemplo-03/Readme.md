@@ -1,27 +1,110 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+`Desarrollo Mobile` > `Swift Intermedio` 
 
-## Titulo del Ejemplo
+## Ciclo de vida de un View
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Aprender la diferencia ente el ciclo de vida de un ViewController y de un View.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11
+
+Como mencionamos un **View** y un **ViewController** no son lo mismo, pero están relacionados.
+
+### ¿Cómo sería agregar un ViewController dentro de otro viewController?
+
+##### Agregando un View Controller hijo
+
+![](0.png)
+
+Primero, declaramos dos instancias de VC. Para luego agregar el View del Child VC dentro del view del VC Padre.
+
+Luego, agregamos el VC hijo al VC Padre.
+
+![](1.png)
+
+##### Eliminando un View Controller hijo
+
+Pirmero, especifica que VC hijo será eliminado.
+Luego, elimina el VC hijo de su VC Padre
+Finalmente, elimina la vista del VC hijo del VC padre.
+
+![](2.png)
+
+
+### Ciclo de vida de un UIView
+
+Cada UIView tiene estos métodos de ciclo de vida.
+
+Por defecto no ejecutan alguna acción, pero podemos reescribirlos para que ejecuten ciertas acciones.
+
+Último y no menos importante…
+la función **removeFromSuperView** permitirá eliminar una vista a su padre.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Crear un proyecto en **Xcode** y crear una nueva subclase de **UIView**.
 
-<details>
+![](3.png)
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+Dentro de esta subclase implementar los métodos de ciclo de vida.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+		- didAddSubview(_:)
+		- willRemoveSubview(_:)
+		- willMove(toSuperView:)
+		- didMoveToSuperiew
+		- willMove(toWindow:)
+		- didMoveToWindow
+
+Así:
+
+```
+import UIKit
+
+class CustomView: UIView {
+
+  override func didAddSubview(_ subview: UIView) {
+    print(#function)
+  }
+  
+  override func willRemoveSubview(_ subview: UIView) {
+     print(#function)
+  }
+  
+  override func willMove(toSuperview newSuperview: UIView?) {
+     print(#function)
+  }
+  
+  override func didMoveToSuperview() {
+     print(#function)
+  }
+  
+  override func willMove(toWindow newWindow: UIWindow?) {
+     print(#function)
+  }
+  
+  override func didMoveToWindow() {
+     print(#function)
+  }
+
+}
+```
+
+Implementaremos en el ViewController principal una instancia de esta clase de UIView.
+
+![](4.png)
+
+```
+let subview = CustomView()
+    subview.frame = CGRect(x: 100, y: 100, width: 50, height: 50)
+    subview.backgroundColor = .blue
+    self.view.addSubview(subview)
+ ```
+
+
+
+
 
 
