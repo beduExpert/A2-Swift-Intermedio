@@ -1,27 +1,55 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+`Desarrollo Mobile` > `Swift Intermedio` 
 
-## Titulo del Ejemplo
+## Ciclo de vida de un ViewController
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- - Aprender como funcionan los métodos en el ciclo de vida de un ViewController.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11
+
+#### TEORIA
+
+Cabe mencionar que el ciclo de vida de un UIView y de un UIViewController son diferentes.
+
+Un UIView trata de una vista, de su jerarquía de subvistas y de cómo su contenido es renderizado.
+
+Mientras un UIViewController trata del ciclo del Controlador.
+
+Al cargar un ViewController, la secuencia de métodos de ciclo de vida se ejecutan en el sig. orden.
+
+![](0.png)
+
+Un ViewController Aparece en la pantalla, entonces es Visible. 
+
+Cuando se oculta entonces se dice que desaparece. 
+
+### WILL and DID
+
+Los métodos con **Will** preparan para los eventos de mostrar/ocultar.
+
+Los métodos con **Did** son ejecutados cuando han completado dichas acciones.
+
+Una vez ejecutado un método **Will**, se ejecutará uno **Did**.
+
+![](1.png)
+
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Crear un nuevo proyecto de Xcode, con Swift y Storyboards como configuración inicial.
 
-<details>
+2.- Dentro de **ViewController** implementar los métodos vistos.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+![](0.png)
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+> Utilizar la función:
 
+> print(#function)
+
+
+*Tip*: No olvides invocar al constructor de la clase padre.
 
