@@ -5,7 +5,7 @@
 
 ### OBJETIVO 
 
-- Identificar como funcionan los métodos de clase de View en conjunto con los de ViewController.
+- Identificar como funcionan los métodos de clase de ViewController como ViewControllers Anidados.
 
 #### REQUISITOS 
 

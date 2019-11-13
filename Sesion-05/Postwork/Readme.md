@@ -1,27 +1,21 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+`Desarrollo Mobile` > `Swift Intermedio` 
 
-## Titulo del Ejemplo
+
+## Implementando Child View Controllers con Subclases de UIView
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Identificar como funcionan los métodos de clase de View en conjunto con los de ViewController.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+0. Xcode 11
+1. Reto-03 terminado.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Así como se desarrollo el `Reto-03`, vimos que utilizamos instancias de `UIView()` dentro del `viewDidLoad()`.
 
-<details>
-
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
+Ahora, implementar estas instancias utilizando la clase de `CustomView()`.
 
