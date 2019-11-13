@@ -2,7 +2,6 @@
 //  ViewController.swift
 //  AppLifeCiclye
 //
-//  Created by Ricardo Montesinos on 13/11/19.
 //  Copyright © 2019 Bedu. All rights reserved.
 //
 

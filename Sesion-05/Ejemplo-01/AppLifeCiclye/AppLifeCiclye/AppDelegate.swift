@@ -2,7 +2,6 @@
 //  AppDelegate.swift
 //  AppLifeCiclye
 //
-//  Created by Ricardo Montesinos on 13/11/19.
 //  Copyright © 2019 Bedu. All rights reserved.
 //
 
@@ -14,7 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+    print(#function)
+    return true
+  }
+  
+  func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    print(#function)
     return true
   }
 
