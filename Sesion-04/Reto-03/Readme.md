@@ -1,26 +1,27 @@
  
 `Desarrollo Mobile` > `Swift Intermedio` 
 	
-## Titulo del Ejemplo 
+## Agregando vista de detalle a App de Login/Maps
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Reforzar el conocimiento adquirido de como implementar DetailViews a partir de un TableView.
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. **Reto-02** terminado y funcionando, de no ser posible, proyecto final de la **Sesión-03**.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Una vez abierto el proyecto, dirigete a `MainViewController` e implementa la función:
 
-<details>
+> func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+2.- Esta función debera abrir una vista de detalle donde muestre información del destino seleccionado.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+Puedes mostrar desde Nombre, Mapa, y Alguna foto del lugar.
+
+![](0.png)
+
+Si lo deseas implementa un Modelo que ayude a pasar los datos a la vista de Detalle.
 
