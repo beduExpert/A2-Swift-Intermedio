@@ -1,27 +1,42 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
+`Desarrollo Mobile` > `Swift Intermedio` 
 	
-## Titulo del Ejemplo 
+## Tipografía del sistema
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Familiarizarse mas con el uso de métodos de App Life cycle. 
+- Aprender con que tipos de letra contamos en una App.
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Xcode 11 
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Dentro del AppDelegate, implementar en algún método del ciclo de vida de la app un código que permita mostrar los nombres de los tipos de letra disponibles para UI.
+
+>Familia de tipografía: UIFont.familyNames
+>
+>Nombres de tipografía: UIFont.fontNames(...)
+
 
 <details>
+        <summary>Solución</summary>
+<p> Dentro del Delegate del proyecto creado, implementar dos ciclos for. Uno anidado en otro.</p>
+<p> En el ciclo For externo o superior imprimiremose el nombre de la familia de tipos de letra. </p>
+<p> En el ciclo For interno, imprimiremos si este tipo de letra esta en Italicas, Negritas, etc... </p>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+```
+ func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    for family: String in UIFont.familyNames {
+      print("\(family)")
+        for names: String in UIFont.fontNames(forFamilyName: family){
+           print("== \(names)")
+        }
+    }
+    return true
+  }
+```
+</details>
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
+![](0.png)
