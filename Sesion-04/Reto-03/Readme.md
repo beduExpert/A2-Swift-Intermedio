@@ -25,3 +25,23 @@ Puedes mostrar desde Nombre, Mapa, y Alguna foto del lugar.
 
 Si lo deseas implementa un Modelo que ayude a pasar los datos a la vista de Detalle.
 
+
+<details>
+        <summary>Solución</summary>
+<p> Para implementar la función didSelectRowAt: </p>
+<p> Ojo cabe mencionar que en este caso estamos pasando las coordenadas, pero lo ideal seria pasar un modelo. </p>
+```
+
+func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let coordinates = mapLocation.coordinates
+    let vc = storyboard?.instantiateViewController(identifier: "DetailViewController") as! DetailViewController
+    vc.coordinates = coordinates
+    self.navigationController?.pushViewController(vc, animated: true)
+  }
+```
+
+<p> En el ViewDidLoad de DetailViewController, asignar los valores de texto e imagen a los IBOutlets. </p>
+</details>
+
+  
+  
