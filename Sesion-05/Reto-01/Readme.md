@@ -1,27 +1,42 @@
  
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
+`Desarrollo Mobile` > `Swift Intermedio` 
 	
-## Titulo del Ejemplo 
+## Reto App’s Life Cycle
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Aprender como funcionan los métodos en el ciclo de vida de una App. 
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Xcode 11
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Con base al proyecto del **Ejemplo-01**, implementar las funciones de ciclo de vida:
+
+```
+applicationDidEnterBackground
+
+applicaitionWillTerminate
+
+```
+
+![](0.gif)
 
 <details>
+        <summary>Solución</summary>
+<p> Dentro del AppDelegate implementar las funciones.</p>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+```
+ func applicationWillTerminate(_ application: UIApplication) {
+    print(#function)
+  }
+  
+  func applicationDidEnterBackground(_ application: UIApplication) {
+    print(#function)
+  }
+```
+</details>
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
 
