@@ -11,15 +11,13 @@
 #### ORGANIZACION DE LA CLASE 
 
 - Cíclo de vida de una App.
+- Implementación de Métodos de Life-Cycle.
+
 https://theswiftpost.co/application-lifecycle/
 
 - Cíclo de vida de un View.
 
 https://theswiftpost.co/view-lifecycle/
-
-- Implementación de Métodos de Life-Cycle.
-
-- Métodos del AppDelegate
 
 - Invocando un View mediante XIBs.
 
