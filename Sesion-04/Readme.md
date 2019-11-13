@@ -1,12 +1,14 @@
 
 `Desarrollo Mobile` > `Swift Intermedio` 
 
-## Flujo del programa 
+## Flujo del programa  
 ### Navegación entre vistas
 
 ### OBJETIVOS 
 
 - Aprender mas a fondo como crear flujos de navegación en iOS.
+- Entender que es el Stack.
+- Aprender a utilizar TableViews en flujos de navegación.
 
 #### ORGANIZACION DE LA CLASE 
 

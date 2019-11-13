@@ -26,7 +26,7 @@ En este ejemplo veremos como enviar datos a una vista de detalle. Se seleccionar
 
 3.- Procedemos a la conexión de elementos de UI con sus respectivos ViewControllers.
 
-4.- Crearemos un `DataModel`, esta clase se encargará de teneer la información a mostrar.
+4.- Crearemos un `DataModel`, esta clase se encargará de tener la información a mostrar.
 Para ello nos apoyaremos de usos de Enums y Structs. Ejemplo:
 
 ![](2.png)

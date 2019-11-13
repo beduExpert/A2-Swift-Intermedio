@@ -96,9 +96,9 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let coordinates = mapLocation.coordinates
     let vc = storyboard?.instantiateViewController(identifier: "DetailViewController") as! DetailViewController
-    vc.coordinates = coordinates
+    let locations = mapLocation.getLocationsNames()
+    vc.nameValue = locations[indexPath.row]
     self.navigationController?.pushViewController(vc, animated: true)
   }
 }

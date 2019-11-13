@@ -105,11 +105,11 @@ self.navigationController?.setViewControllers(stack!, animated: true)
 
 #### Resultados
 
-Navegando al VC3 y al regresar nos saltamos el 2do VC:
+Navegando al VC2 y al regresar nos saltamos al VC3:
 
 ![](0.gif)
 
-Navegando hasta el VC3, y volviendolo RootViewController.
+Navegando hasta el VC3, regresamos al RootViewController.
 
 ![](1.gif)
 

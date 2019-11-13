@@ -43,7 +43,7 @@ vd.dismiss(animated: true, completion: nil)
 
 ![](1.gif)
 
-2.- Ya que los `UINavigationController` poseen un `UIViewController` en su *Stack*, pueden ser presentados tanto de manera **modal** como por via **push**. Entonces, una vez *Pusheado* un ViewController, para regresar a la vista anterior utilizamos un *Pop*.
+2.- Ya que los `UINavigationController` poseen un `UIViewController` en su *Stack*, pueden ser presentados tanto de manera **modal** o por via **push**. Entonces, una vez *Pusheado* un ViewController si queremos regresar a la vista anterior utilizamos un *Pop*.
 
 Vemos que estas operaciones son propias de la estructura de datos: **Stack**
 
@@ -66,10 +66,6 @@ navigationController?.popToRootViewController(animated: true)
 ![](2.gif)
 
 3.- Aunque es posible presentar `UIViewControllers` tanto de manera modal como por push, los `UIViewControllers` solo pueden mostrar otros `UIViewControllers`. Por lo tanto, `UIViewControllers` solo pueden ser eliminados del Stack mediante *dismiss*, a menos que ellos esten dentro de un `UINavigationController` Stack.
-
-**Realizar**: 
-> Demostrar que no es posible utilizar la operación POP cuando vamos al ViewController2 no utilizando navigation.
-
 
 
 

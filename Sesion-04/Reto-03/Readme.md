@@ -19,9 +19,9 @@
 
 2.- Esta función debera abrir una vista de detalle donde muestre información del destino seleccionado.
 
-Puedes mostrar desde Nombre, Mapa, y Alguna foto del lugar.
+Solamente mostraremos el nombre del lugar seleccionado.
 
-![](0.png)
+![](0.gif)
 
 Si lo deseas implementa un Modelo que ayude a pasar los datos a la vista de Detalle.
 
@@ -31,17 +31,10 @@ Si lo deseas implementa un Modelo que ayude a pasar los datos a la vista de Deta
 <p> Para implementar la función didSelectRowAt: </p>
 <p> Ojo cabe mencionar que en este caso estamos pasando las coordenadas, pero lo ideal seria pasar un modelo. </p>
 ```
-
-func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let coordinates = mapLocation.coordinates
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let vc = storyboard?.instantiateViewController(identifier: "DetailViewController") as! DetailViewController
-    vc.coordinates = coordinates
+    let locations = mapLocation.getLocationsNames()
+    vc.nameValue = locations[indexPath.row]
     self.navigationController?.pushViewController(vc, animated: true)
   }
-```
-
-<p> En el ViewDidLoad de DetailViewController, asignar los valores de texto e imagen a los IBOutlets. </p>
-</details>
-
-  
-  
+```  
