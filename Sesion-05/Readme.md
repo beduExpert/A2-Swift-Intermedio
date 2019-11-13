@@ -6,24 +6,27 @@
 
 ### OBJETIVOS 
 
-- El alumno aprenderá el uso de los métodos de Life-Cycle en el ViewController.
+- El alumno aprenderá sobre el ciclo de vida de una App y de una Vista. 
+
+- Implementará ejemplos donde se pueda apreciar el funcionamiento de los métodos o funciones del ciclo de vida.
+
+- Aprenderá el uso básico de los XIBs.
+
 
 #### ORGANIZACION DE LA CLASE 
 
 - Cíclo de vida de una App.
 - Implementación de Métodos de Life-Cycle.
 
-https://theswiftpost.co/application-lifecycle/
-
-- Cíclo de vida de un View.
-
-https://theswiftpost.co/view-lifecycle/
-
-- Invocando un View mediante XIBs.
-
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
-https://medium.com/good-morning-swift/ios-view-controller-life-cycle-2a0f02e74ff5
+- Cíclo de vida de un ViewController.
 
-https://medium.com/hackernoon/application-life-cycle-in-ios-12b6ba6af78b
+	- [Ejemplo 02](Ejemplo-02)
+	- [Reto 02](Reto-02)
+
+- Cíclo de vida de un View, ChildViewControllers.
+
+	- [Ejemplo 03](Ejemplo-03)
+	- [Reto 03](Reto-03)
