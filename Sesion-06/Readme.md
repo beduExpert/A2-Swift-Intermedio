@@ -5,23 +5,25 @@
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Aprender el funcionamiento de ARC, y cómo crear código en Swift  para el manejo óptimo de memoria.
+
+- Aprenderemos qué es un reference cycle.
+
+- Utilizaremos el debugger para descubrir cuando ocurren.
+
 
 #### ORGANIZACION DE LA CLASE 
 
 - Como y que es ARC
 
-- Que es un retain cycle
+- Object’s Lifetime
 
-- Reference Types vs Value Types
+- Reference Cycles y Retain Cycles
 
-- Vida de un Objeto
+- Rompiendo Retain cycles
 
-- Weak References
+- Debugging. Buscando Reference Cycles con Xcode
 
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
-
-
-https://www.raywenderlich.com/966538-arc-and-memory-management-in-swift
