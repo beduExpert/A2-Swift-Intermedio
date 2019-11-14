@@ -23,23 +23,19 @@
 
 <details>
         <summary>Solución</summary>
-<p>La función print() debe implementarse en cada property de cada parámetro de las funciones de TableView, ejemplo: </p>
+<p> Una vez abierto el proyecto del ejemplo-02, agregar un view controller nuevo: DetailViewController</p>
+
+<p> En el Storyboard, agregamos el ViewController, le pondremos como id: DetailViewController </p>
+
+<p> En el ViewController, implementamos una función que estará dentro de **didSelectRowAt:**, así podemos abrir la vista de detalle.</p>
 
 ```
-  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    print(#function)
-        print(indexPath.row)
-    print(indexPath.section)
-    print(indexPath.count)
-    print(indexPath.description)
-    print(tableView.numberOfSections)
-    print(tableView.description)
+  func showDetailView() {
+    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+    let vc = storyBoard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+    self.present(vc, animated: true, completion: nil)
   }
 ```
-
-<p>El resultado debe verse en el debugger: </p> 
-
-<img src="0.png" alt="Solucion" width="500" height="190">
                   
 </details>
 
