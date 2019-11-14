@@ -1,26 +1,28 @@
  
 `Desarrollo Mobile` > `Swift Intermedio` 
 	
-## Titulo del Ejemplo 
+## Implementar un Retain Cycle
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Provocar un Retain cycle para comprender donde tiene su origen.
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Xcode 11. Playgrounds.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Generar un Retain Cycle obedeciendo el diagrama siguiente:
+
+![](0.png)
+
+2.- Tanto Student como School son clases.
+
+3.- Cada clase debe tener una instancia de la otra clase como una variable. 
 
 <details>
+        <summary>Solución</summary>
+<p> Respueta 1. </p>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
+</details>
