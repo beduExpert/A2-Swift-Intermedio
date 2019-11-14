@@ -9,7 +9,7 @@ import Foundation
 
 class Animal {
   let name: String
-  var food: Food?
+  weak var food: Food?
   
   init(name: String) {
     self.name = name

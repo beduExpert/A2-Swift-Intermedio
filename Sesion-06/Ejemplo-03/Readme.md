@@ -1,27 +1,49 @@
+`Desarrollo Mobile` > `Swift Intermedio` 
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Debuggeando Retain Cycles
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Aprender a utilizar las herramientas de Xcode para encontrar Memory Leaks o Retain Cycles.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11.
+2. Ejemplo-01 funcionando.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Con base al código del Ejemplo-01, ejecutaremos la app y nos aseguraremos de que las funciones *deinit{ }* no son invocadas.
 
-<details>
+2.- Ubicamos el botón en Xcode de Debug Memory Graph.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+![](1.png)
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+3.- Este botón nos permitirá ver nuestras referencias en un modo gráfico.
+
+![](2.png)
+
+4.- Al seleccionar un elemento vemos como esta conectado con otra referencia y también muestra el conteo de referencias de ARC.
+
+![](3.png)
+
+5.- Vemos que aparecen muchos elementos en el Navigation, filtremos todos ellos, solo mostraremos los Leaks Blocks.
+
+![](4.png)
+
+6.- El navigator se reduce bastante, solo nos muestra los LEAK BLOCKS que tenemos.
+
+![](5.png)
+
+7.- Vemos que los dos LEAKS que tenemos están relacionados con los mismos objetos.
+
+![](0.gif)
+
+8.- Resolvemos el problema convirtiendo las variables en **weak**.
+
+![](6.png)
+
+![](7.png)
+
 
 

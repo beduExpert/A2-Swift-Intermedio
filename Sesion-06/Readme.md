@@ -16,7 +16,7 @@
 
 - Como y que es ARC
 
-- Object’s Lifetime
+- Ciclo de vida de un Objeto
 
 - Reference Cycles y Retain Cycles
 
@@ -28,7 +28,7 @@
 	- [Ejemplo 02](Ejemplo-02)
 	- [Reto 02](Reto-02)
 
-- **Debugging**. Buscando Reference Cycles con Xcode
+- Debugging. Buscando Reference Cycles con Xcode
 
 	- [Ejemplo 03](Ejemplo-03)
 	- [Reto 03](Reto-03)

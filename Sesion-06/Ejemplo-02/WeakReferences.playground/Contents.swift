@@ -1,3 +1,4 @@
+
 import UIKit
 
 class MyObject {
@@ -11,7 +12,7 @@ weak var reference = object
 // set reference to nil
 object = nil
 
-if object == nil {
+if reference == nil {
   print("No hay memory leak")
 } else {
   print("aun existe")

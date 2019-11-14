@@ -9,7 +9,7 @@ import Foundation
 
 class Food {
 
-  var animal: Animal?
+  weak var animal: Animal?
   
   init() {
     print("Food was created")

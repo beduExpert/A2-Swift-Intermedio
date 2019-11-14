@@ -1,27 +1,26 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+`Desarrollo Mobile` > `Swift Intermedio` 
 
-## Titulo del Ejemplo
+## Implementación de Referencias Weak
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Aprender a romper Retain Cycle
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11
+2. Entendimiento de creación de Clases.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Crear un Playground nuevo y crear una clase simple.
 
-<details>
+2.- Crear una instancia de dicha clase, luego implementar una variable de tipo `weak` asignandole el objeto creado.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+3.- Asignaremos la referencia como `nil`.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+4.- Verificamos mediante un IF-ELSE si el primer objeto creado aun existe o no.
 
+![](0.png)
 
