@@ -17,11 +17,25 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 Agrega las instrucciones generales del ejemplo o reto
 
 <details>
+	<summary>Solución</summary>
+	<p> La función para obtener los Retain cycles:</p>
+	
+```
+import UIKit
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+class ViewController: UIViewController {
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+
+    let food: Food = Food()
+    let animal: Animal = Animal(name: "Toby")
+    food.addAnimal(animal)
+    animal.addFood(food)
+    print("ARC count \(CFGetRetainCount(food))")
+    print("ARC count \(CFGetRetainCount(animal))")
+  }
+}
+```
 </details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
 

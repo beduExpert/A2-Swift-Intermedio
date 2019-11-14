@@ -20,10 +20,16 @@
 
 - Reference Cycles y Retain Cycles
 
-- Rompiendo Retain cycles
-
-- Debugging. Buscando Reference Cycles con Xcode
-
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
+
+- Rompiendo Retain cycles
+
+	- [Ejemplo 02](Ejemplo-02)
+	- [Reto 02](Reto-02)
+
+- **Debugging**. Buscando Reference Cycles con Xcode
+
+	- [Ejemplo 03](Ejemplo-03)
+	- [Reto 03](Reto-03)
 
