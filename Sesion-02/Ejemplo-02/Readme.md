@@ -10,11 +10,14 @@
 
 #### REQUISITOS
 
+0.- Xcode 11.
+
 1.- Playgrounds.
 
 #### DESARROLLO
 
-1.- En el playground de la clase Car. Definir la clase Taxi y la clase camioneta.
+1.- En el **Playground** de la clase **Car**. 
+Definir la clase **Taxi** y la clase **Camioneta**.
 
 
 2.- Taxi debe implementar el constructor de su clase padre.

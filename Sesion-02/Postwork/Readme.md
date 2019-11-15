@@ -1,27 +1,22 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+`Desarrollo Mobile` > `Swift Intermedio` 
 
-## Titulo del Ejemplo
+## Clases y Herencia
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Reforzar el concepto de Herencia.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Crear tres clases, una llamada A, otra B y la última C.
 
-<details>
+La clase C heredará de B y B de C.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+En cada inicializador de clase, llamar a `print()` para mostrar el mensaje de que clase se ha creado. claro antes de `super.init()`.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
-
+¿Al crear las instancias, que orden se mostraria en la consola?
