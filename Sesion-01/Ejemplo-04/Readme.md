@@ -7,7 +7,7 @@
 
 ### OBJETIVO
 
-- En este ejemplo implementaremos funciones de diferentes maneras, el objetivo es cubrir la mayor cantidad de posibilidades.
+- Implementar funciones de diferentes maneras, para cubrir la mayor cantidad de posibilidades.
 
 
 #### REQUISITOS
