@@ -20,3 +20,5 @@ La clase C heredará de B y B de C.
 En cada inicializador de clase, llamar a `print()` para mostrar el mensaje de que clase se ha creado. claro antes de `super.init()`.
 
 ¿Al crear las instancias, que orden se mostraria en la consola?
+
+
