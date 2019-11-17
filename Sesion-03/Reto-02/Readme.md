@@ -9,6 +9,7 @@
 
 #### REQUISITOS 
 
+0. Xcode 11
 1. Ejemplo-02 concluido, servirá de base para este reto.
 
 #### DESARROLLO

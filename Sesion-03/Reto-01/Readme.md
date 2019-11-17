@@ -1,6 +1,6 @@
  `Desarrollo Mobile` > `Swift Intermedio` 
 	
-## Titulo del Ejemplo 
+## Agregando pins en mapa 
 
 ### OBJETIVO 
 
@@ -58,9 +58,5 @@ let coordinates = Coordinates()
                   subtitle: coordinates.palace.subtitle)
 
 ```
-
-
-
-
 
 </details>
