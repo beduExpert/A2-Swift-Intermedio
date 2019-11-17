@@ -10,8 +10,6 @@
 
 - Implementará ejemplos donde se pueda apreciar el funcionamiento de los métodos o funciones del ciclo de vida.
 
-- Aprenderá el uso básico de los XIBs.
-
 
 #### ORGANIZACION DE LA CLASE 
 
