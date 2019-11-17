@@ -1,27 +1,46 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+`Desarrollo Mobile` > `Swift Intermedio` 
 
-## Titulo del Ejemplo
+## Postwork: Memory Leak Fix
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Con este Postwork se pretende retar al estudiante para que en un futuro pueda resolver el problema de Memory Leaks.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11
+2. [Template](template) proporcionado
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1. Abrir el template adjunto, examinar el código y modificarlo para evitar que haya **Memory Leaks**.
 
 <details>
+	<summary>Solución</summary>
+	<p> Respuesta: </p>
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+```
+class Baby {
+
+  let name: String
+  var toys: [Toy] = []
+
+  init(name: String) {
+    self.name = name
+  }
+
+  func add(_ toy: Toy) {
+    toy.baby = self
+    toys.append(toy)
+  }
+}
+
+class Toy {
+  weak var baby: Baby?
+  init() { }
+}
+```
 </details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
 
 
