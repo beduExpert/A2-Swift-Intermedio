@@ -1,7 +1,7 @@
 
 `Desarrollo Mobile` > `Swift Intermedio` 
 
-## Clases y Herencia
+## Definiendo métodos de clase
 
 ### OBJETIVO
 
@@ -15,12 +15,12 @@
 
 1.- Definiendo métodos de clase
 
-Abrir un playground y definir la clase Car.
+Abrir un playground y definir la clase **Car**.
 
-Definir los métodos arrancar y frenar.
+Definir los métodos: arrancar y frenar.
 
 
-2.- Definir una clase Taxi y una clase Camioneta.
+2.- Definir una clase **Taxi** y una clase **Camioneta**.
 
 En el playground de la clase Car.
 
