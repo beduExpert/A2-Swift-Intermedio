@@ -13,7 +13,7 @@
 
 #### DESARROLLO
 
-1. Con base al Ejemplo-01, implementar un nuevo flujo partiendo del ViewController inicial, agregar almenos 3 vistas.
+1. Con base al Ejemplo-01, implementar un nuevo flujo de tipo **Navigation** partiendo del **ViewController** inicial, agregar almenos 3 vistas.
 
 2. En la última vista del nuevo flujo, implementar un código que permita regresar a la vista **ANTERIOR**.
 

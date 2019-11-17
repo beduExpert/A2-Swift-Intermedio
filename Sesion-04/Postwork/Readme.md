@@ -1,27 +1,21 @@
+`Desarrollo Mobile` > `Swift Intermedio` 
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Vista de detalle con mas información
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Enviar mas datos a la vista de detalle.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11
+2. Haber terminado el Reto-03.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Con base al Reto-03, implementar una vista que permita enviar mas datos ej.
 
-<details>
-
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
+- Nombre de la ubicación.
+- Una foto de la ubicación mostrada en un ImageView.
+- Mostrar el pin en un mini mapa.
 
