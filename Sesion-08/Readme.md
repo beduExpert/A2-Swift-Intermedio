@@ -15,7 +15,6 @@
 	- [Reto 01](Reto-01)
 
 - Instalando tu primera Dependencia. Pod file.
-
 - Usando Pods instalados.
 - CocoaPods vs Carthage
 - Instalando Carthage
@@ -24,3 +23,14 @@
 
 https://www.raywenderlich.com/416-carthage-tutorial-getting-started
 
+
+### Recursos
+
+https://brew.sh/index_es
+[Instalando Carthage](https://github.com/Carthage/Carthage#installing-carthage)
+
+Librerias a utilizar:
+
+https://github.com/airbnb/lottie-ios
+
+pod 'youtube-ios-player-helper', '~> 0.1.4'
