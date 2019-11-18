@@ -7,12 +7,6 @@
 
 - Conocer como es el proceso de integración de código en Objective-C con código escrito en Swift.
 
-
-#### PREWORK
-
-[Learn Swift From Objective-C](
-https://codewithchris.com/learn-swift-from-objective-c/)
-
 #### ORGANIZACION DE LA CLASE 
 
 - Objective-C basics
