@@ -18,13 +18,13 @@
 
 - Usando Swift clases en Objective-C
 
-	- [Ejemplo 01](Ejemplo-01)
-	- [Reto 01](Reto-01)
+	- [Ejemplo 02](Ejemplo-02)
+	- [Reto 02](Reto-02)
 
 - Usando Clases de Objective-C en Swift. 
 
-	- [Ejemplo 01](Ejemplo-01)
-	- [Reto 01](Reto-01)
+	- [Ejemplo 03](Ejemplo-03)
+	- [Reto 03](Reto-03)
 
 #### Postwork
 [PostWork](Postwork)
