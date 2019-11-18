@@ -1,6 +1,5 @@
 //
 //  Person.m
-//  
 //  Bedu
 //
 
@@ -19,11 +18,11 @@
 }
 
 -(void) printName {
-  NSLog(@"Name = %@", self.name)
+  NSLog(@"Name = %@", self.name);
 }
 
 -(void) getAge {
-   NSLog(@"Age = %@", self.age)
+  NSLog(@"Age = %d", self.age);
 }
 
 @end

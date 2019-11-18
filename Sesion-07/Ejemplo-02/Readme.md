@@ -2,27 +2,44 @@
 `Desarrollo Mobile` > `Swift Intermedio` 
 
 
-## Titulo del Ejemplo
+## Integrando Objective-c en Swift
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Como integrar archivos de clase de Objective-C y hacerlos funcionar en Swift.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Archivos de clase en la carpeta [CodeObjc](CodeObjc).
+
+2. Xcode 11
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Crearemos un proyecto en Swift y agregaremos una clase en Objective-C.
 
-<details>
+Utilizaremos un código de Objective-C dentro de un proyecto en Swift.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+2.- Una vez creado el proyecto, agregar las clases Persona.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+Aparecerá una ventana similar a esta, seleccionamos Copy y Finish.
+
+![](0.png)
+
+3.- Posteriormente nos pedirá crear un Bridging Header.
+Lo seleccionamos.
+
+![](1.png)
+
+4.- En el Bridge agregaremos el código a utilizar, en este caso la clase Person, entonces agregamos **Person.h**.
+
+![](2.png)
+
+5.- Implementamos el código en el **ViewController** a manera de test.
+
+![](3.png)
+
+Al compilar vemos que son compatibles.
+
 
 

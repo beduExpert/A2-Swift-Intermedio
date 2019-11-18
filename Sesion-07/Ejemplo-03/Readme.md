@@ -1,27 +1,35 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+`Desarrollo Mobile` > `Swift Intermedio` 
 
-## Titulo del Ejemplo
+## Implementando custom clases en Storyboard
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Implementar clases en Objective-C directamente en el Storyboard.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11.
+2. [Clases](classes) proporcionadas para realizar el ejemplo.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Esta vez el ejemplo sube un poco de complejidad, pero es muy similar al Reto anterior.
 
-<details>
+1. Implementaremos dos clases de Objective-C en un UIButton, pero… en el **Storyboard** configuraremos la Clase a la que pertenece el botón y sus propiedades.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+![](0.gif)
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+2. Una vez agregadas las clases de Objective-C al proyecto.
+
+![](0.png)
+
+3. Ir al Storyboard y agregar un UIButton. 
+
+4. Este UIButton deberá ser de la clase correspondiente a la clase de Objective-C.
+
+5. Configuramos los parámetros correspondientes.
+
+![](1.png)
 
 
