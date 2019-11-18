@@ -1,27 +1,47 @@
  
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
+`Desarrollo Mobile` > `Swift Intermedio`
 	
-## Titulo del Ejemplo 
+## Integrand un Custom Class de Objective-c
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Integrar clases de UIKit en Objective-C. 
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Xcode
+2. [Clases](classes) proporcionadas.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Crear un proyecto nuevo basado en Swift.
+
+2.- Agregar un UIButton.
+
+3.- Agregar las clases proporcionadas. Recuerda hacer un Bridge.
+
+4.- El Button debe estar conectado a la clase ViewController.
+
+5.- Codificar la funcionalidad que permita usar la clase **CustomButton**.
 
 <details>
+	<summary>Solución</summary>
+	<p> Una vez realizados los pasos 1 al 4, la implementación del código es como sigue:</p>
+	<p> En el ViewController tener declarado el IBOutlet del button.</p>
+	<p> Utilizar la clase CustomButton y pasarle como parámetro el botón del IBOutlet.</p>
+	
+```
+import UIKit
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+class ViewController: UIViewController {
+
+  @IBOutlet weak var button: UIButton!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    CustomButton.setup(button)
+  }
+}
+```
 </details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
 

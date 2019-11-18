@@ -23,7 +23,20 @@ Además, si los inputs son iguales pintar el texto en verde, si son diferentes e
 
 <details>
 	<summary>Solución</summary>
-	<p> Agrega aqui la solucion </p>
+	<p> Al agregar los IBOulets en el ViewController.m implementamos el código para sumar y cambiar el color. </p>
+
+```
+  int value1 = _textField1.text.intValue;
+  int value2 = _textField2.text.intValue;
+  int result = value1 + value2;
+  _label.text = [[NSString alloc] initWithFormat: @"%d", result];
+  
+  if (value1 == value2) {
+    _label.textColor = [UIColor greenColor];
+  } else {
+    _label.textColor = [UIColor redColor];
+  }
+```
 </details> 
 
 ![](0.gif)
