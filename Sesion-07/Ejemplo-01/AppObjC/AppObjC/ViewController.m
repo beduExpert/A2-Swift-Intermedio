@@ -20,6 +20,6 @@
 
 
 - (IBAction)showMessage:(id)sender {
-  _label.text = [[NSString alloc] initWithString: @"Hello world"];
+  _label.text = @"Hello world";
 }
 @end
