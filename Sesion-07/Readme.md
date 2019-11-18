@@ -5,7 +5,8 @@
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Conocer como es el proceso de integración de código en Objective-C con código escrito en Swift.
+
 
 #### PREWORK
 
@@ -16,13 +17,20 @@ https://codewithchris.com/learn-swift-from-objective-c/)
 
 - Objective-C basics
 
-- Objective-C class
+	- [Ejemplo 01](Ejemplo-01)
+	- [Reto 01](Reto-01)
 
 - Bridging-Header
+
+- Usando Swift clases en Objective-C
 
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
-- Usando Swift clases en Objective-C
-
 - Usando Clases de Objective-C en Swift. 
+
+	- [Ejemplo 01](Ejemplo-01)
+	- [Reto 01](Reto-01)
+
+#### Postwork
+[PostWork](Postwork)
