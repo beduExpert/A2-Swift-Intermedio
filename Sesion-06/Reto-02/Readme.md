@@ -1,8 +1,7 @@
  
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
+`Desarrollo Mobile` > `Swift Intermedio` 
 	
-## Titulo del Ejemplo 
+## Retain Cycles
 
 ### OBJETIVO 
 
@@ -14,28 +13,8 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Con base en el Ejemplo-02, implementar la función:
 
-<details>
-	<summary>Solución</summary>
-	<p> La función para obtener los Retain cycles:</p>
-	
-```
-import UIKit
+> CFGetRetainCount(object)
 
-class ViewController: UIViewController {
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-
-    let food: Food = Food()
-    let animal: Animal = Animal(name: "Toby")
-    food.addAnimal(animal)
-    animal.addFood(food)
-    print("ARC count \(CFGetRetainCount(food))")
-    print("ARC count \(CFGetRetainCount(animal))")
-  }
-}
-```
-</details> 
-
+2.- Obtener el número d eretains que tiene cada objeto.

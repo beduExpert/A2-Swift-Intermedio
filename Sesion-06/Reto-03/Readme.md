@@ -1,7 +1,7 @@
  
 `Desarrollo Mobile` > `Swift Intermedio` 
 
-## Titulo del Ejemplo 
+## Implementacion de Reto-02 con Structs
 
 ### OBJETIVO 
 
@@ -13,14 +13,13 @@
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- De acuerdo al diagrama crear las estructuras correspondientes y evitar un Retain Cycle.
+
+![](0.png)
+
 
 <details>
+        <summary>Solución</summary>
+<p>La respuesta es no es posible.</p>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
+</details>
