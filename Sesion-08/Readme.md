@@ -18,9 +18,8 @@
 
 - Usando Pods instalados.
 - CocoaPods vs Carthage
-
 - Instalando Carthage
-- Creando tu primer CartFile
+- Instalando tu primera Dependencia en Carthage
 - Compilando dependencias con Carthage
 
 https://www.raywenderlich.com/416-carthage-tutorial-getting-started
