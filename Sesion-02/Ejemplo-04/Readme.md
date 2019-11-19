@@ -5,7 +5,7 @@
 
 ### OBJETIVO
 
-- A definir protocolos, con sus proiedades y métodos así como tambien implementar herencia y extensiones.
+- Definir protocolos, con sus proiedades y métodos así como tambien implementar herencia y extensiones.
 
 #### REQUISITOS
 
