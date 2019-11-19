@@ -5,7 +5,7 @@
 
 ### OBJETIVO
 
-- Conocer el concepto de clase y herencia. Implementar una clase padre y una clase hija.
+- Reconocer el concepto de clase y herencia. Implementar una clase padre y una clase hija.
 
 #### REQUISITOS
 
