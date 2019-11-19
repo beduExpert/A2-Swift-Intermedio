@@ -1,30 +1,28 @@
  
 Desarrollo Mobile` > `Swift Intermedio` 
 
-## Titulo del Ejemplo
+## YouTube App
 
 ### OBJETIVO
+
+Con base a la documentación del Readme de algún repositorio, crear una app utilizando Cocoapods.
+
+#### REQUISITOS
 
 0. Conexión a Internet
 1. Contraseña de administrador del sistema.
 2. Terminal de macOS 
 3. Xcode 11
 
-#### REQUISITOS
-
-1. Lo necesario para desarrollar el ejemplo o el Reto
-
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Esta vez crearemos un proyecto nuevo, donde implementaremos la instalación de este Pod.
+
+El reto incluye leer la documentación para poder reproducir un video de youtube en la vista principal.
 
 <details>
-
-        <summary>Solucion</summary>
+        <summary>Solución</summary>
         <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
 </details>
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
-
+![](0.gif)
