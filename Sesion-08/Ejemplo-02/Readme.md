@@ -1,27 +1,44 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+`Desarrollo Mobile` > `Swift Intermedio`
 
-## Titulo del Ejemplo
+## Utilizando el Pod para agregar funcionalidad
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Una vez integrado un **Pod**, el alumno deberá ser capaz de utilizar el código para agregar funcionalidad extra a su proytecto.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+0. Conexión a Internet
+1. Contraseña de administrador del sistema.
+2. Terminal de macOS 
+3. Xcode 11
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Ya tenemos el JSON y el pod instalado, procedemos a crear una función que permita agregar la animación en un UIView.
 
-<details>
+2.- Creamos una nueva clase de Swift en el proyecto y comenzamos a escribir...
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+![](0.png)
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+**NOTA**: *"fish"* es el nombre del *JSON* de la animación. Manejar nombres en minúsculas sin caracteres especiales ni números.
+
+
+3.- Para agregar la animación nos apoyaremos de una clase con función estática.
+
+![](1.png)
+
+4.- En donde gustes colocar la animación, agregar un Subview con fondo transparente.
+Este subview deberá heredar de la clase LoaderView.
+
+![](2.png)
+
+#### Resultados
+
+![](0.gif)
+
+
+
 
 

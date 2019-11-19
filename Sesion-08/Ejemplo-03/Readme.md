@@ -1,27 +1,64 @@
+ 
+Desarrollo Mobile` > `Swift Intermedio` 
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## App con animación
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+0. Conexión a Internet
+1. Contraseña de administrador del sistema.
+2. Terminal de macOS 
+3. Xcode 11
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Crear una App donde se muestre una animación.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Vamos a crear una App donde se muestre una animación. Integrando una librería de Carthage a un proyecto de iOS.
 
-<details>
+![](0.png)
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+1.- Crearemos un nuevo proyecto en Xcode, basándonos en Storyboards y Swift.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+2.- Con la terminal nos dirigimos a la carpeta de nuestro proyecto.
+
+Instalaremos Lottie pero con Carthage. Desde la terminal de macOS. 
+ 
+3.- Vamos a la carpeta de nuestro proyecto.
+
+4.- Ingresamos este comando para crear un Cartfile.
+
+> touch Cartfile
+
+5.- Abrimos el archivo. Agregamos el repositorio a usar.
+
+> open -a Xcode Cartfile
+
+![](2.png)
+
+Agregaremos la animación en json al proyecto.
+
+6.- Compilamos con Carthage.
+
+![](1.png)
+
+7.- Una vez finalizado, agregaremos el framework en nuestros Linked Libraries.
+
+Debe estar en un Path parecido a este:
+
+> .../CarthageApp/Carthage/Build/iOS
+
+![](0.gif)
+
+8.- Desarrollaremos la App agregando las [clases](clases).
+
+
+
+
+
+
+
 
 

@@ -7,6 +7,13 @@
 
 - Aprender a utilizar y configurar los manejadores de dependencias mas utilizados, Cocoapods y Carthage.
 
+#### REQUISITOS GENERALES
+
+0. Conexión a Internet
+1. Contraseña de administrador del sistema.
+2. Terminal de macOS 
+3. Xcode 11
+
 #### ORGANIZACION DE LA CLASE 
 
 - CocoaPods. Que es, para que sirve y como hacer su instalación

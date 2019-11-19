@@ -1,27 +1,48 @@
 
 `Desarrollo Mobile` > `Swift Intermedio`
 
-## Titulo del Ejemplo
+## Cocoapods, primeros pasos
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Aprender a Integrar una Libreria de CocoaPods en un Proyecto de iOS
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+0. Conexión a Internet
+1. Contraseña de administrador del sistema.
+2. Terminal de macOS 
+3. Xcode 11
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Integrando una librería de CocoaPods a un proyecto de iOS.
 
+1.- Crearemos un nuevo proyecto en Xcode, basándonos en Storyboards y Swift.
+
+2.- Con la terminal nos dirigimos a la carpeta de nuestro proyecto.
+
+3.- Ya estando en la carpeta, ingresamos el comando:
+
+> $ pod init
+
+Esto creará un nuevo archivo, el archivo Podfile.
+
+4.- Tendremos un archivo Podfile parecido a esto:
 
 ![](0.png)
 
-![](1.png)
 
-![](0.gif)
+Especificamos versión de iOS, target o nombre del proyecto y los nombres de los Pods a utilizar.
 
+
+5.- Vamos a instalar un Pod llamado Lottie. Escribimos en el Podfile.
+
+> pod 'lottie-ios'
+
+6.- Instalamos, nos vamos a la terminal y tecleamos...
+
+> pod install
 
 
 

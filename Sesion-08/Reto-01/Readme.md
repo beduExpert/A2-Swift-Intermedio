@@ -1,29 +1,29 @@
  
 Desarrollo Mobile` > `Swift Intermedio` 
 	
-## Titulo del Ejemplo 
+## Integrando un Pod
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Aprender a como utilizar Cocoapods para integrar proyectos de terceros en una app en iOS.
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+0. Conexión a Internet
+1. Contraseña de administrador del sistema.
+2. Terminal de macOS 
+3. Xcode 11
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- En el código proporcionado, Integrar la librería de Lottie.
 
-<details>
+2.- El Json proporcionado corresponde a la sig. animación.
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+3.- Agregar el [JSON](json) al proyecto.
 
+![](0.png)
 
-![](0.gif)
 
 
 
