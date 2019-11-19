@@ -5,7 +5,7 @@
 
 ### OBJETIVO
 
-- A definir protocolos, con sus proiedades y métodos.
+- Definir protocolos, con sus proiedades y métodos.
 
 #### REQUISITOS
 
