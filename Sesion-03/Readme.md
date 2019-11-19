@@ -5,7 +5,7 @@
 
 ### OBJETIVOS 
 
-- El alumno aprenderá a utilizar elementos de UIKit library como Switches, Segmented Control, Buttons, AlertViews, implementará el uso de Tableview para reforzar lo previamente aprendido.
+- Utilizar elementos de UIKit library como Switches, Segmented Control, Buttons, AlertViews, implementar el uso de Tableview para reforzar lo previamente aprendido.
 
 #### ORGANIZACION DE LA CLASE 
 

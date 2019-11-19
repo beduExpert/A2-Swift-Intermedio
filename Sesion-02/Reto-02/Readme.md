@@ -10,7 +10,7 @@
 
 #### REQUISITOS 
 
-1. Terminado el **Ejemplo-03**.
+1. Terminado el **Ejemplo-02**.
 
 #### DESARROLLO
 
