@@ -7,7 +7,7 @@
 
 ### OBJETIVO 
 
-- Aprender mas sobre el uso de herencia, extensiones y protocolos.
+- Aprender máss sobre el uso de herencia, extensiones y protocolos.
 
 #### REQUISITOS 
 
