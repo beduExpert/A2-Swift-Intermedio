@@ -5,7 +5,7 @@ Desarrollo Mobile` > `Swift Intermedio`
 
 ### OBJETIVO 
 
-- A adaptar clases para hacerlas mas genéricas.
+- Adaptar clases para hacerlas más genéricas.
 - Instalar Pods
 - Aprender a utilizar Lottie.
 
