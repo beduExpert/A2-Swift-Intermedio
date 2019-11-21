@@ -43,5 +43,30 @@ El Key sería: `velPquCnw7k`.
         <p> En el Storyboard, agregar un UIView y en el Inspector agregar la Clase. La clase es: YTPlayerView</p>
          <p> Un botón enviará el video a reproducir.</p>
 </details>
+<p> Para reproducir el video, son necesarios algunos parámetros </p>
+
+```
+ public let YouTubeParams: [String: Any] = [
+    "autoplay": 0,
+    "playsinline" : 1,
+    "enablejsapi": 1,
+    "wmode": "transparent",
+    "controls": 0,
+    "showinfo": 0,
+    "rel": 0,
+    "fs" : 1,
+    "modestbranding": 0,
+    "iv_load_policy": 3
+  ]
+
+```
+
+<p> Será necesario conectar el delegate </p>
+
+```
+self.videoView.delegate = self
+```
+
+
 
 ![](0.gif)
