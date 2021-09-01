@@ -2,11 +2,13 @@
 `Desarrollo Mobile` > `Swift Intermedio`
 
 
-## Implementar una vista de detalle
+## Implementando Funciones
+
 
 ### OBJETIVO
 
-- Mostrar una vista de detalle al seleccionar una celda del TableView.
+- Implementar funciones de diferentes maneras, para cubrir la mayor cantidad de posibilidades.
+
 
 #### REQUISITOS
 
@@ -14,32 +16,18 @@
 
 #### DESARROLLO
 
-1.- Con base en el Ejemplo-02, implementar una vista de detalle.
+1.- Crea un nuevo proyecto de Playground.
 
-2.- Al seleccionar una celda, se deberá navegar a esta vista.
-
-![](0.gif)
-
-
-<details>
-        <summary>Solución</summary>
-<p> Una vez abierto el proyecto del ejemplo-02, agregar un view controller nuevo: DetailViewController</p>
-
-<p> En el Storyboard, agregamos el ViewController, le pondremos como id: DetailViewController </p>
-
-<p> En el ViewController, implementamos una función que estará dentro de **didSelectRowAt:**, así podemos abrir la vista de detalle.</p>
+2.- Mediante la Sintaxis vista en clase implementar lo siguiente.
 
 ```
-  func showDetailView() {
-    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-    let vc = storyBoard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
-    self.present(vc, animated: true, completion: nil)
-  }
+- Una función simple, sin parámetros ni retorno.
+- Una función con un parámetro String.
+- Una función con un parámetro Int.
+- Una función con dos parámetros, uno String y uno Int.
+- Una función con dos parámetros String, y que además concatene dichos Strings. A la salida debemos obtener un valor String también.
+- Una función que multiplique dos números.
+- Una función que tenga como parámetro un Array de valores Int, y que dicha función imprima los valores.
 ```
-                  
-</details>
 
-
-
-
-
+3.- Al finalizar, abrir el [Playground](Functions.playground) de esta carpeta para comparar el código con tus respuestas.

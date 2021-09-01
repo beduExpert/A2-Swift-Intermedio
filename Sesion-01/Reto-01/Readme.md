@@ -15,17 +15,19 @@
 #### REQUISITOS
 
 1. Xcode.
-2. Proyecto terminado del Ejemplo-03 sobre TableViews con Delegate y DataSource conectados.
+
+Proyecto terminado del Ejemplo-02 sobre TableViews con Delegate y DataSource conectados.
+
 3. Se deben mostrar los elementos del Array.
 
 #### DESARROLLO
 
-1.- Con base en el Ejemplo-03 de TableViews continuar la app.
+1.- Con base en el Ejemplo-02 de TableViews continuar la app.
 
 2.- En las funciones implementadas, incluir una función `print(#function)` y ver en el Debugger Area como se van ejecutando las funciones.
- 
+
  Las funciones que deben cubrirse son al menos las siguientes:
- 
+
 ```
 cellForRowAt:
 
@@ -57,5 +59,4 @@ Al finalizar de implementar este reto, debe seleccionarse cada celda y ver en el
          height="190">
                   
 </details>
-
 

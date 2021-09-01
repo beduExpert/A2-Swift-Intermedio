@@ -7,7 +7,7 @@ Este módulo es la continuación del curso de Swift Fundamentals. Durante las se
 
 ### Antes de comenzar...
 
-Verifica tener **Xcode 11** instalado.
+Verifica tener **Xcode 12 instalado.
 
 ### OBJETIVO 
 
@@ -15,13 +15,13 @@ Verifica tener **Xcode 11** instalado.
 
 
 ### ORGANIZACIÓN DE MÓDULO 
- 
- - [Sesión 1](https://github.com/beduExpert/A2-Swift-Intermedio/tree/master/Sesion-01): Table Views
- - [Sesión 2](https://github.com/beduExpert/A2-Swift-Intermedio/tree/master/Sesion-02): Protocolos(multi-herencia)
- - [Sesión 3](https://github.com/beduExpert/A2-Swift-Intermedio/tree/master/Sesion-03): Elementos de UIKit (sliders, switches, botones...)
+
+ - [Sesión 1](https://github.com/beduExpert/A2-Swift-Intermedio/tree/master/Sesion-01): Table Views y Funciones
+ - [Sesión 2](https://github.com/beduExpert/A2-Swift-Intermedio/tree/master/Sesion-02): Introducción a la Programación orientada a objetos y protocolos
+ - [Sesión 3](https://github.com/beduExpert/A2-Swift-Intermedio/tree/master/Sesion-03): Elementos de UIKit (componentes más complejos)
  - [Sesión 4](https://github.com/beduExpert/A2-Swift-Intermedio/tree/master/Sesion-04): Flujo del programa (navegación entre vistas)
  - [Sesión 5](https://github.com/beduExpert/A2-Swift-Intermedio/tree/master/Sesion-05): Ciclo de vida de una vista
  - [Sesión 6](https://github.com/beduExpert/A2-Swift-Intermedio/tree/master/Sesion-06): Manejo de memoria
  - [Sesión 7](https://github.com/beduExpert/A2-Swift-Intermedio/tree/master/Sesion-07): Convivencia con Objective-C
- - [Sesión 8](https://github.com/beduExpert/A2-Swift-Intermedio/tree/master/Sesion-08): Manejador de dependencias Cocoapod y Carthage.
+ - [Sesión 8](https://github.com/beduExpert/A2-Swift-Intermedio/tree/master/Sesion-08): Manejador de dependencias Cocoapods, Swift Package y Carthage.
 
