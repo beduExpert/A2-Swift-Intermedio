@@ -10,7 +10,8 @@
 
 #### REQUISITOS 
 
-1. Terminado el **Ejemplo-02**.
+1. Xcode
+2. Tener terminado el **Ejemplo-02**.
 
 #### DESARROLLO
 

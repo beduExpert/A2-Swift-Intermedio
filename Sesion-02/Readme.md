@@ -1,11 +1,15 @@
 
 `Desarrollo Mobile` > `Swift Intermedio` 
 
-## Protocolos(multi-herencia)
+## Introducción a la programación orientada a objetos y protocolos 
 
 ### OBJETIVOS 
 
-- Aprender el concepto de Herencia y Polimorfismo. Aplicar dichos conecptos a Clases y Protocolos.
+- Recordará las caracteristicas de Herencia en Prog. Orientada a Objetos y las aplicará en Swift con el manejo de clases para personalizar objetos. 
+
+- Aplcará el concepto de Protocolos para responder a eventos entre objetos
+
+  
 
 #### ORGANIZACION DE LA CLASE 
 

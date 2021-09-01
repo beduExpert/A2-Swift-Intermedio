@@ -5,11 +5,11 @@
 
 ### OBJETIVO
 
-- Definir protocolos, con sus proiedades y métodos así como tambien implementar herencia y extensiones.
+- Definir protocolos, con sus propiedades y métodos así como tambien implementar herencia y extensiones.
 
 #### REQUISITOS
 
-1. Playgrounds.
+1. Xcode.
 2. Conceptos bien entendidos de Herencia y Protocolos.
 
 #### DESARROLLO
