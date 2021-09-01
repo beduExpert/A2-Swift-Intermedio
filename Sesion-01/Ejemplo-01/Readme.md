@@ -1,4 +1,3 @@
-
 `Desarrollo Mobile` > `Swift Intermedio`
 
 
@@ -7,7 +6,7 @@
 
 ### OBJETIVO
 
-- Usar las distintas maneras de agregar un TableViewController a una vista en Swift.
+- Usar las distintas maneras de agregar un TableViewController a una App en Swift.
 
 #### REQUISITOS
 
@@ -15,14 +14,44 @@
 
 #### DESARROLLO
 
-1.- Ir a Storyboard, en el VC por defecto agregar un TableViewController desde el Library y ajustar los constraints.
+##### Usando un TableView
 
-2.- Conectar dicho VC a su clase de Swift.
+1. Ir a Storyboard, en el VC por defecto agregar un TableView desde el Library.
 
-3.- Ejecutar la app.
+   ![](0.png)
 
-4.- Crear un TVC desde el componente por defecto, sin agregar el View a un VC.
+2. Ajustar la posición.
 
-![](0.png)
+3. Ejecuta el app en el simulador de tu preferencia y observa que ocurre al cambiar la orientación.
 
-5.- Declarar un TVC mediante código y mostrarlo en pantalla.
+##### Usando un TableView Controller
+
+1. Ir a Storyboard, en algún área disponible agregar un TableViewController desde el Library.
+
+   ![](1.png)
+
+2. En el panel de Inspección, en la pestaña Attributes, asigna este Controller como el inicial.
+
+3. Ejecuta el app en el simulador de tu preferencia y observa que ocurre al cambiar la orientación.
+
+##### Crear un TableView, sin agregar el View a un ViewController
+
+1. Declarar el siguiente código en el ViewController por defecto:
+
+   **override** **func** viewDidLoad() {
+
+     **super**.viewDidLoad()
+
+      
+
+     **let** tv = UITableView()
+
+     tv.frame = CGRect(x: 0, y: 0, width: 320, height: 480)
+
+     **self**.view.addSubview(tv)
+
+      
+
+    }
+
+2. Ejecuta el app en el simulador de tu preferencia y observa que ocurre al cambiar la orientación.
